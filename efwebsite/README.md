@@ -402,4 +402,4 @@ There are some users that have the wrong `uid` associated, here is a list. Corre
 
 ## Fix text on database by removing html tags
 
-run the script `social/experimenta/[yyyy]-[mm]-[dd] Epilepsy/preprocess_fix_db_text.py`
+run the script [01-preprocess-fix-db-text.py](01-preprocess-fix-db-text.py)
