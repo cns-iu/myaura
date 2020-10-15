@@ -1,5 +1,5 @@
 #!/bin/bash
-source constants.sh
+source ../constants.sh
 set -ev
 
 for json in ct-locations doctor-data locations

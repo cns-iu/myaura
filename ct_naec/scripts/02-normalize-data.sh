@@ -1,5 +1,5 @@
 #!/bin/bash
-source constants.sh
+source ../constants.sh
 set -ev
 
 node src/convert-ct-locations.js $OUT/ct-locations.raw.csv $OUT/ct-locations.json

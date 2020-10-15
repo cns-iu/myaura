@@ -1,6 +1,6 @@
 #!/bin/bash
-source constants.sh
-source db-config.sh
+source ../constants.sh
+source ../db-config.sh
 set -ev
 
 psql << EOF
