@@ -9,7 +9,7 @@ import sys
 sys.path.insert(0, '../ddi_project/include')
 sys.path.insert(0, '../ddi_project/social/include')
 
-from db_init_ddi_project import connectToMySQL
+from db_init import connectToMySQL
 import numpy as np
 import pandas as pd
 from datetime import datetime

@@ -11,7 +11,7 @@ import sys
 sys.path.insert(0, '../../include')
 sys.path.insert(0, '../../../include')
 #
-import db_init_ddi_project as db
+import db_init as db
 import re
 
 import numpy as np
@@ -19,11 +19,8 @@ import pandas as pd
 pd.set_option('display.max_rows', 100)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
-from pandas.io.json import json_normalize
-from datetime import datetime
 from termdictparser import Sentences, TermDictionaryParser
 #
-import utils
 
 # Mongo Command to remove everything before Twitter existed:
 # db.twitter_post_mention_20180706.remove({'created_time':{$lte:new ISODate("2006-03-21T00:00:00Z")}})

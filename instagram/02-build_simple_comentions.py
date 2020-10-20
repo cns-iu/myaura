@@ -10,7 +10,7 @@ import sys
 sys.path.insert(0, '../../include')
 sys.path.insert(0, '../../../include')
 # DB - Mysql
-import db_init_ddi_project as db
+import db_init as db
 # General
 # import numpy as np
 import pandas as pd

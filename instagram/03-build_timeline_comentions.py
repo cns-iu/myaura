@@ -11,7 +11,7 @@ import sys
 sys.path.insert(0, '../../include')
 sys.path.insert(0, '../../../include')
 # DB - Mysql
-import db_init_ddi_project as db
+import db_init as db
 # General
 import numpy as np
 import pandas as pd
@@ -20,7 +20,6 @@ pd.set_option('display.max_columns', 20)
 pd.set_option('display.width', 1000)
 import time
 import pymongo
-from datetime import datetime
 from joblib import Parallel, delayed
 
 

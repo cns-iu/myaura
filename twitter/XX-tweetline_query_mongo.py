@@ -9,7 +9,7 @@ import sys
 sys.path.insert(0, '../../include')
 sys.path.insert(0, '../../../include')
 #
-import db_init_ddi_project as db
+import db_init as db
 import pandas as pd
 pd.set_option('display.max_rows', 50)
 pd.set_option('display.max_columns', 500)
@@ -17,7 +17,6 @@ pd.set_option('display.width', 1000)
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from termdictparser import Sentences, TermDictionaryParser
-import re
 
 if __name__ == '__main__':
 	

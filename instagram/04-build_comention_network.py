@@ -11,7 +11,7 @@ import sys
 sys.path.insert(0, '../../include')
 sys.path.insert(0, '../../../include')
 # DB - Mysql
-import db_init_ddi_project as db
+import db_init as db
 # General
 import numpy as np
 import pandas as pd
@@ -25,7 +25,6 @@ from distanceclosure.utils import _prox2dist as prox2dist
 from distanceclosure.dijkstra import Dijkstra
 from distanceclosure.cython._dijkstra import _cy_single_source_shortest_distances
 # MultiProcessing
-from joblib import Parallel, delayed
 
 
 if __name__ == '__main__':
