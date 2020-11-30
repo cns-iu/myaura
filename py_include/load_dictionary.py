@@ -6,8 +6,10 @@
 import db_init as db
 
 import pandas as pd
+from utils import load_save_return
 from termdictparser import TermDictionaryParser
 
+@load_save_return('dict.pkl')
 def load_dictionary(dicttimestamp, db_setting = 'postgres_cns_myaura', db_type = 'postgresql'):
     """
     load dictionary from database and build termdictparser

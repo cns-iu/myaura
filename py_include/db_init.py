@@ -79,7 +79,7 @@ def connectToMongoDB(server, db, verbose=False, *args, **kwargs):
     if 'user' in CONFIG and 'password' in CONFIG:
         CONFIG['user'] = quote_plus(CONFIG['user'])
         CONFIG['password'] = quote_plus(CONFIG['password'])
-        url = 'mongodb://%(user)s:%(password)s@%(host)s/?authMechanism=MONGODB-CR&authSource=admin' % CONFIG
+        url = 'mongodb://%(user)s:%(password)s@%(host)s/?authMechanism=SCRAM-SHA-1&authSource=admin' % CONFIG
     else:
         url = 'mongodb://%(host)s' % CONFIG
 
