@@ -2,7 +2,7 @@
 /.sonarlint
 /raw-data
 /db-config.sh
-/db_config.json
+/db_config.ini
 /mysql.cnf
 
 # compiled output
