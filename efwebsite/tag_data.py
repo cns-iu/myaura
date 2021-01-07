@@ -9,10 +9,8 @@ import sys
 sys.path.insert(0, '../ddi_project/include')
 sys.path.insert(0, '../ddi_project/social/include')
 
-import db_init_ddi_project as db
-import numpy as np
+import db_init as db
 import pandas as pd
-from datetime import datetime
 from termdictparser import Sentences, TermDictionaryParser
 import pickle
 import os
