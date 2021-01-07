@@ -1,5 +1,5 @@
 # coding=utf-8
-# Author: Rion B Correia
+# Author: Rion B Correia & Xuan Wang
 # Date: Jan 06, 2021
 #
 # Description: Parse Instagram timelines and extract dictionary matches
@@ -16,12 +16,11 @@ import pandas as pd
 pd.set_option('display.max_rows', 100)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
-from pandas.io.json import json_normalize
 from datetime import datetime
 #
 import db_init as db
 import utils
-from load_dictionary import load_dictionary_build_term_parser
+from load_dictionary import load_dictionary, build_term_parser
 from termdictparser import Sentences
 
 
@@ -33,8 +32,9 @@ if __name__ == '__main__':
     dicttimestamp = '20180706'
 
     # Load Dictionary
+    dfD = load_dictionary(dicttimestamp=dicttimestamp, server='mysql-ddi-dictionaries')
     # Build Parser Vocabulary
-    tdp, dfD = load_dictionary_build_term_parser(dicttimestamp=dicttimestamp, server='mysql-ddi-dictionaries')
+    tdp = build_term_parser(dfD)
 
     #
     dict_token = dfD['token'].to_dict()
@@ -54,12 +54,14 @@ if __name__ == '__main__':
     # Get Users
     #
     d = mongo_raw['instagram_user'].find({}, {'_id': True, 'username': True})
-    dfU = json_normalize(list(d))
+    dfU = pd.json_normalize(list(d))
     dfU = dfU.rename(columns={'_id': 'id'})
     n_users = dfU.shape[0]
 
     #
     # Parse Users
+    #
+    list_post_mentions = []
     #
     for i, u in dfU.iterrows():
         print('> Parsing User: {username:s} (id: {id_user:s}) ({i:d} of {n:d})'.format(username=u['username'], id_user=u['id'], i=(i + 1), n=n_users))
@@ -77,11 +79,8 @@ if __name__ == '__main__':
             }
         )
 
-        if (q.count() > 0):
-            df = json_normalize(list(q))
-        else:
-            continue
-
+        df = pd.json_normalize(list(q))
+        #
         df = df.rename(columns={'caption.text': 'caption', '_id': 'id'})
         df = df.set_index(pd.to_datetime(df['created_time'], unit='s'), drop=False)
         df = df.sort_index(ascending=True)
@@ -89,8 +88,6 @@ if __name__ == '__main__':
 
         n_posts = df.shape[0]
         n_posts_with_matches = 0
-
-        list_post_mentions = []
 
         #
         # Parse Mentions in Timeline
@@ -117,7 +114,7 @@ if __name__ == '__main__':
                 for match in s.get_unique_matches():
                     for mid in match.id:
                         mj['matches'].append({
-                            'id_match': mid,
+                            'id': mid,
                             'id_parent': dict_id_parent[mid],
                             'token': dict_token[mid],
                             'parent': dict_parent[mid],
@@ -135,6 +132,6 @@ if __name__ == '__main__':
     dfR = pd.DataFrame(list_post_mentions)
 
     # Export
-    wCSVfile = '../tmp-data/epilepsy-mentions-{dicttimestamp:s}.csv.gz'.format(dicttimestamp=dicttimestamp)
+    wCSVfile = '../tmp-data/01-instagram-epilepsy-mentions-{dicttimestamp:s}.csv.gz'.format(dicttimestamp=dicttimestamp)
     utils.ensurePathExists(wCSVfile)
-    dfR.to_csv(wCSVfile, compression='gzip', encoding='utf-8')
+    dfR.to_csv(wCSVfile)

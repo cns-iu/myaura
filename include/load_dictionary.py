@@ -9,8 +9,8 @@ import pandas as pd
 from termdictparser import TermDictionaryParser
 
 
-def load_dictionary_build_term_parser(dicttimestamp, server='postgres-cns-myaura'):
-    """ Load dictionary from database and builds termdictparser
+def load_dictionary(dicttimestamp, server='postgres-cns-myaura'):
+    """ Load dictionary from database
 
     Args:
         dicttimestamp (string): the version of dictionary (ex: 20210131)
@@ -19,9 +19,6 @@ def load_dictionary_build_term_parser(dicttimestamp, server='postgres-cns-myaura
     Returns:
         tuple (termdictparser, pandas.DataFrame): A TermDictParser and a pandas dataframe containing the dictionary.
     """
-    #
-    # Load Dictionary from MySQL
-    #
     print('--- Loading MySQL dictionary (%s)---' % dicttimestamp)
     #
     if server.startswith('postgres'):
@@ -64,22 +61,34 @@ def load_dictionary_build_term_parser(dicttimestamp, server='postgres-cns-myaura
     else:
         raise TypeError('Invalid server')
 
-    dfD = pd.read_sql(sql, engine, index_col='id')
+    df = pd.read_sql(sql, engine, index_col='id')
 
+    return df
+
+
+def build_term_parser(df):
+    """ Builds the TermParser from a DataFrame of terms
+
+    Args:
+        df (pandas.DataFrame): The dictionary dataframe.
+
+    Returns:
+        termdictparser (object): the termdictparser object.
+    """
     # Some tokens have multiple hits (Drug products with multiple compounds)
-    dfDg = dfD.reset_index(drop=False).groupby('token').agg({
+    dfg = df.reset_index(drop=False).groupby('token').agg({
         'id': lambda x: tuple(x)
     })
-    dfDg = dfDg.reset_index().set_index('id')
+    dfg = dfg.reset_index().set_index('id')
 
     # Build Term Parser
     print('--- Building Term Parser ---')
     tdp = TermDictionaryParser()
 
     # Select columns to pass to parser
-    list_tuples = list(dfDg['token'].str.lower().items())
+    list_tuples = list(dfg['token'].str.lower().items())
 
     # Build Parser Vocabulary
     tdp.build_vocabulary(list_tuples)
 
-    return tdp, dfD
+    return tdp

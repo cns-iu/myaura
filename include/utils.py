@@ -8,7 +8,7 @@ import os
 import re
 import functools
 import pickle
-
+import numpy as np
 
 #
 # Functions to handle Twitter text
@@ -123,3 +123,21 @@ def load_save_return(dbname):
         return LS_wrapper
 
     return LS_decorator
+
+
+#
+# Network functions
+#
+def prox2dist(p):
+    """Transforms a non-negative ``[0,1]`` proximity to distance in the ``[0,inf]`` interval:
+
+    Args:
+        p (float): proximity value
+
+    Returns:
+        d (float): distance value
+    """
+    if (p == 0):
+        return np.inf
+    else:
+        return (1 / float(p)) - 1

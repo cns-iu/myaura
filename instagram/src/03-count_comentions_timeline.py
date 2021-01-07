@@ -1,5 +1,5 @@
 # coding=utf-8
-# Author: Rion B Correia
+# Author: Rion B Correia & Wuan Wang
 # Date: Nov 11, 2017
 # 
 # Description: 
