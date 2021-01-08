@@ -1,15 +1,17 @@
 # coding: utf-8
 # Author: Rion B Correia
-# Date: 25 June 2019
+# Date: 07 Jan 2021
 #
 # Description:
-# Preprocess the text on the DB, 1) removes tags
+# Preprocess, cleans, the text on the DB.
 #
+import os
 import sys
-sys.path.insert(0, '../../include')
-sys.path.insert(0, '../../../include')
 #
-import db
+#include_path = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, os.pardir, 'include'))
+include_path = '/nfs/nfs7/home/rionbr/myaura/include'
+sys.path.insert(0, include_path)
+#
 import pandas as pd
 pd.set_option('display.max_rows', 50)
 pd.set_option('display.max_columns', 500)
@@ -24,7 +26,8 @@ from nltk.stem.snowball import SnowballStemmer
 #
 import multiprocessing
 from multiprocessing import Pool
-
+#
+import db_init as db
 
 #
 # Regular Expression Definitions
@@ -141,11 +144,11 @@ def _worker_stem(text_tagged):
 
 if __name__ == '__main__':
 
-    engine = db.connectToMySQL(server='mysql_epilepsy')
+    engine = db.connectToMySQL(server='etrash-mysql-epilepsy')
 
-    tokenizer = RegexpTokenizer(r'<url>|<number>|<unit>|\w+')
-    lemmatizer = WordNetLemmatizer()
-    stemmer = SnowballStemmer("english")
+    #tokenizer = RegexpTokenizer(r'<url>|<number>|<unit>|\w+')
+    #lemmatizer = WordNetLemmatizer()
+    #stemmer = SnowballStemmer("english")
 
     # Generally Fix HTML code
     indexes = ['pid', 'cid']
@@ -154,8 +157,8 @@ if __name__ == '__main__':
         'SELECT cid, uid, text_original FROM dw_chats'
     ]
     updates = [
-        'UPDATE dw_forums SET text_clean = %s , text_lemmed = %s , text_stemmed = %s WHERE pid = %s',
-        'UPDATE dw_chats SET text_clean = %s , text_lemmed = %s , text_stemmed = %s WHERE cid = %s'
+        'UPDATE dw_forums SET text_clean = %s WHERE pid = %s',
+        'UPDATE dw_chats SET text_clean = %s WHERE cid = %s'
     ]
 
     for index, sql_select, sql_update in zip(indexes, selects, updates):
@@ -177,6 +180,7 @@ if __name__ == '__main__':
         dfP['text_clean'] = texts_clean
         # print dfP.head()
 
+        """
         # Tokenize
         print('- Tokenize')
         pool_token = Pool(processes=n_cores)
@@ -208,7 +212,7 @@ if __name__ == '__main__':
         texts_stemmed = [p.get() for p in texts_stemmed]
         dfP['text_stemmed'] = texts_stemmed
         # print dfP.head()
-
+        """
         #
         # Sequential Processing
         #
@@ -251,8 +255,8 @@ if __name__ == '__main__':
         for i, (_id, dft) in enumerate(dfP.iterrows(), start=1):
 
             text_clean = dft['text_clean']
-            text_lemmed = dft['text_lemmed']
-            text_stemmed = dft['text_stemmed']
+            #text_lemmed = dft['text_lemmed']
+            #text_stemmed = dft['text_stemmed']
 
-            data = (text_clean, text_lemmed, text_stemmed, _id)
+            data = (text_clean, _id)
             engine.execute(sql_update, data)

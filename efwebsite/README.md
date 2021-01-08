@@ -1,6 +1,6 @@
 # Epilepsy Foundation Website Dataset Instructions
 
-The scripts below were designed for MySQL, some convertion may be needed for Postgres.
+The scripts below were designed for MySQL and the raw data is stored on the etrash server.
 
 
 ## Important Tables
@@ -116,9 +116,7 @@ CREATE TABLE dw_forums
     title VARCHAR(255) NULL,
     created INT(11) UNSIGNED,
     text_original LONGTEXT,
-    text_clean LONGTEXT,
-    text_lemmed LONGTEXT,
-    text_stemmed LONGTEXT
+    text_clean LONGTEXT
 )
 CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
@@ -279,9 +277,7 @@ CREATE TABLE dw_chats
     touid INT(10) UNSIGNED,
     created INT(11) UNSIGNED,
     text_original LONGTEXT,
-    text_clean LONGTEXT,
-    text_lemmed LONGTEXT,
-    text_stemmed LONGTEXT
+    text_clean LONGTEXT
 )
 CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
