@@ -82,7 +82,7 @@ if __name__ == '__main__':
     n = len(df)
     for _, row in df.iterrows():
         if i % 1000 == 0:
-            print('> Computing comentions. Row {i:,d} of {n:,d} ({per:.2%})'.format(i=i, n=n, per=(i / n)))
+            print('> Parsing comentions. Row {i:,d} of {n:,d} ({per:.2%})'.format(i=i, n=n, per=(i / n)))
         source = row['source']
         target = row['target']
         count = row['comention']['count']

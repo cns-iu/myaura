@@ -5,6 +5,10 @@
 /db_config.ini
 /mysql.cnf
 
+/instagram/tmp-data/
+/twitter/tmp-data/
+/efwebsite/tmp-data/
+
 # compiled output
 /dist
 /tmp

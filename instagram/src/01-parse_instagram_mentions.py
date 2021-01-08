@@ -11,12 +11,10 @@ include_path = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir
 # include_path = '/nfs/nfs7/home/rionbr/myaura/include'
 sys.path.insert(0, include_path)
 #
-import numpy as np
 import pandas as pd
 pd.set_option('display.max_rows', 100)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
-from datetime import datetime
 #
 import db_init as db
 import utils
@@ -32,7 +30,7 @@ if __name__ == '__main__':
     dicttimestamp = '20180706'
 
     # Load Dictionary
-    dfD = load_dictionary(dicttimestamp=dicttimestamp, server='mysql-ddi-dictionaries')
+    dfD = load_dictionary(dicttimestamp=dicttimestamp, server='etrash-mysql-ddi-dictionaries')
     # Build Parser Vocabulary
     tdp = build_term_parser(dfD)
 
@@ -63,13 +61,16 @@ if __name__ == '__main__':
     #
     list_post_mentions = []
     #
-    for i, u in dfU.iterrows():
-        print('> Parsing User: {username:s} (id: {id_user:s}) ({i:d} of {n:d})'.format(username=u['username'], id_user=u['id'], i=(i + 1), n=n_users))
-        user_id = u['id']
+    for idx, row in dfU.iterrows():
+        #
+        i = idx + 1
+        per = i / n_users
+        id_user = row['id']
+        print("> Parsing User '{id_user:d}': {i:d} of {n:d} ({per:.2%})".format(id_user=id_user, i=i, n=n_users, per=per))
 
         q = mongo_raw['instagram_post'].find(
             {
-                'user_id': user_id
+                'user_id': id_user
             },
             {
                 '_id': True,
@@ -94,7 +95,7 @@ if __name__ == '__main__':
         #
         for created_time, p in df.iterrows():
             date = created_time.strftime('%Y-%m-%d')
-            post_id = p['id']
+            id_post = p['id']
             caption = utils.combineTagsAndText(p['caption'], p['tags'])
             caption = utils.removeRepostApp(caption)
             caption = utils.removeAtMention(caption)
@@ -106,8 +107,8 @@ if __name__ == '__main__':
             if s.has_match():
                 n_posts_with_matches += 1
                 mj = {
-                    'id_post': post_id,
-                    'id_user': user_id,
+                    'id_post': id_post,
+                    'id_user': id_user,
                     'created_time': created_time,
                     'matches': []
                 }
