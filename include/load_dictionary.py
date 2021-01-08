@@ -19,9 +19,9 @@ def load_dictionary(dicttimestamp, server='postgres-cns-myaura'):
     Returns:
         tuple (termdictparser, pandas.DataFrame): A TermDictParser and a pandas dataframe containing the dictionary.
     """
-    print('--- Loading MySQL dictionary (%s)---' % dicttimestamp)
+    print('--- Loading {server:s} dictionary ({dicttimestamp:s}) ---'.format(server=server, dicttimestamp=dicttimestamp))
     #
-    if server.startswith('postgres'):
+    if 'postgres' in server:
 
         engine = db.connectToPostgreSQL(server=server)
         tablename = 'dictionaries.dict_%s' % (dicttimestamp)
@@ -40,7 +40,7 @@ def load_dictionary(dicttimestamp, server='postgres-cns-myaura'):
                 LEFT JOIN %s p ON d.id_parent = p.id
                 WHERE d.enabled > 0""" % (tablename, tablename)
 
-    elif server.startswith('mysql'):
+    elif 'mysql' in server:
 
         engine = db.connectToMySQL(server=server)
         tablename = 'dict_%s' % (dicttimestamp)
@@ -59,7 +59,7 @@ def load_dictionary(dicttimestamp, server='postgres-cns-myaura'):
             LEFT JOIN %s p ON d.id_parent = p.id
             WHERE d.enabled = True""" % (tablename, tablename)
     else:
-        raise TypeError('Invalid server')
+        raise TypeError("Invalid server name. The name of the server must contain either a 'mysql' or 'postgress' string.")
 
     df = pd.read_sql(sql, engine, index_col='id')
 
