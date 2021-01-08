@@ -7,9 +7,9 @@ set -ev
 #
 # Init variables
 #
-SCHEMA=net_instagram_20180706
-CSVNODES=../tmp-data/04-instagram-epilepsy-network-20180706-samepost-nodes.csv
-CSVEDGES=../tmp-data/04-instagram-epilepsy-network-20180706-samepost-edges.csv
+SCHEMA=net_twitter_20180706
+CSVNODES=../tmp-data/04-twitter-epilepsy-network-20180706-samepost-nodes.csv
+CSVEDGES=../tmp-data/04-twitter-epilepsy-network-20180706-samepost-edges.csv
 
 #
 # SQL command to create schema, tables and populate the tables.
