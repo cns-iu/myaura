@@ -1,5 +1,6 @@
 #!/bin/bash
-source ../../db-config.sh
+source ../db-config.sh
+source scripts/var.sh
 
 # echo all the commands and stops if something breaks
 set -ev
@@ -7,9 +8,12 @@ set -ev
 #
 # Init variables
 #
-SCHEMA=net_pubmed_ddi_20180706
-CSVNODES=../tmp-data/04-pubmed-epilepsy-network-20180706-nodes.csv
-CSVEDGES=../tmp-data/04-pubmed-epilepsy-network-20180706-edges.csv
+SCHEMA=net_pubmed_epilepsy_$DICT_VERSION
+mkdir -p tmp-data
+CSVNODES=tmp-data/04-pubmed-epilepsy-network-$DICT_VERSION-nodes.csv
+CSVEDGES=tmp-data/04-pubmed-epilepsy-network-$DICT_VERSION-edges.csv
+
+python src/build_network.py
 
 #
 # SQL command to create schema, tables and populate the tables.

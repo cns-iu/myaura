@@ -30,6 +30,9 @@ if __name__ == '__main__':
 
     # Init
     dicttimestamp = '20180706'
+    with open(os.path.join(os.path.dirname(__file__), '..', 'scripts', 'var.sh')) as varfile:
+        defline = varfile.readline()
+        dicttimestamp = defline.split('=')[1].strip()
     #window_size = '7'  # in days
 
     """

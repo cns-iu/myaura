@@ -35,6 +35,9 @@ if __name__ == '__main__':
     #
     #
     dicttimestamp = '20180706'  # raw_input("dict timestamp [yyyymmdd]:") #'20171221' # datetime.today().strftime('%Y%m%d')
+    with open(os.path.join(os.path.dirname(__file__), '..', 'scripts', 'var.sh')) as varfile:
+        defline = varfile.readline()
+        dicttimestamp = defline.split('=')[1].strip()
 
     # Load Dictionary
     dfD = load_dictionary(dicttimestamp=dicttimestamp, server='cns-postgres-myaura')

@@ -11,7 +11,7 @@ import os
 import sys
 from itertools import combinations
 
-py_include_path = os.path.abspath(os.path.join(os.path.dirname(__file__),os.pardir, os.pardir, 'include'))
+py_include_path = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, os.pardir, 'include'))
 
 sys.path.insert(0, py_include_path)
 #
@@ -34,19 +34,20 @@ if __name__ == '__main__':
     #
     # Init
     #
-    #
     dicttimestamp = '20180706'  # raw_input("dict timestamp [yyyymmdd]:") #'20171221' # datetime.today().strftime('%Y%m%d')
+    with open(os.path.join(os.path.dirname(__file__), '..', 'scripts', 'var.sh')) as varfile:
+        defline = varfile.readline()
+        dicttimestamp = defline.split('=')[1].strip()
 
     mention_table = 'mention_pubmed_epilepsy_%s.mention' % (dicttimestamp)
     comention_table = 'mention_pubmed_epilepsy_%s.comention' % (dicttimestamp)
     psql_mention = db.connectToPostgreSQL('cns-postgres-myaura')
-    # mongo_mention, _ = db.connectToMongoDB(server='mongo_ddi', db=db_mention)
 
     inserts = {}
 
     for i in range(10000):
-        offset = i*100
-        print('> Parsing PubMedID: %d - %d' % (i*100, (i+1)*100))
+        offset = i * 100
+        print('> Parsing PubMedID: %d - %d' % (i * 100, (i + 1) * 100))
         i += 1
 
         # SQL Query
@@ -103,8 +104,8 @@ if __name__ == '__main__':
 
                     inserts[key] = comention
 
-    print( '\nDone.\n' )
-    print( '--- Inserting PubMed CoMentions ---' )
+    print('\nDone.\n')
+    print('--- Inserting PubMed CoMentions ---')
     print()
     inserts_list = inserts.values()
     inserts_size = len(inserts_list)
@@ -113,13 +114,12 @@ if __name__ == '__main__':
     count = 0
     for comention in inserts_list:
 
-        sql = "INSERT INTO %s (%s) VALUES ('%s');" % \
-              (comention_table, 'comention', json.dumps(comention).replace("'", "''"))
+        sql = "INSERT INTO %s VALUES (%d, %d, '%s');" % \
+              (comention_table, comention['source']['id'], comention['target']['id'], json.dumps(comention).replace("'", "''"))
         try:
             q = psql_mention.execute(sql)
         except ValueError as error:
             print("Error! Args: '{:s}'".format(error.args))
         count += 1
         if count % 100 == 0:
-            print('%s/%d entries have been inserted' %(count, inserts_size))
-
+            print('%s/%d entries have been inserted' % (count, inserts_size))
