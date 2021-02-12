@@ -34,7 +34,15 @@ SELECT DISTINCT pmid FROM (
 		'D004834', -- Epilepsy, Post-Traumatic
 		'D020195', -- Epilepsy, Reflex
 		'D000073376', -- Epileptic Syndromes
-		'D000080485' -- Sudden Unexpected Death in Epilepsy
+		'D000080485', -- Sudden Unexpected Death in Epilepsy
+		-- drugs knonw to be used to treat epilepsy
+		'D000078306', -- clobazam (onfi)
+		'D000077287', -- levetiracetam (keppra)
+		'D000077213', -- lamotrigine
+		'D000078334', -- lacosamide
+		'D002220', -- carbamazepine
+		'D003975', -- diazepam (valium)
+		'D000078330' -- oxcarbazepine
 	)
 	UNION
 	SELECT pmid FROM pubmed.medline_master WHERE		
