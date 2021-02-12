@@ -53,7 +53,15 @@ SELECT DISTINCT pmid FROM (
 ) AS q
 ORDER BY pmid;
 
+--- Indexes
 CREATE UNIQUE INDEX ON pubmed.view_epilepsy_query(pmid);
+
+-- Permissions
+GRANT ALL ON TABLE pubmed.view_epilepsy_query TO bherr WITH GRANT OPTION;
+GRANT ALL ON TABLE pubmed.view_epilepsy_query TO gallantm WITH GRANT OPTION;
+GRANT ALL ON TABLE pubmed.view_epilepsy_query TO rionbr WITH GRANT OPTION;
+GRANT ALL ON TABLE pubmed.view_epilepsy_query TO larzhang WITH GRANT OPTION;
+GRANT ALL ON TABLE pubmed.view_epilepsy_query TO xw47 WITH GRANT OPTION;
 
 
 -- Create the "data table" which has all the metadata we want for the corresponding "query table"
@@ -84,6 +92,13 @@ LEFT OUTER JOIN (
 ) a ON m.pmid = a.pmid
 WHERE m.pmid IN (SELECT pmid FROM pubmed.view_epilepsy_query);
 
+-- Indexes
 CREATE UNIQUE INDEX ON pubmed.view_epilepsy(pmid);
 CREATE INDEX ON pubmed.view_epilepsy(pub_year);
 
+-- Permissions
+GRANT ALL ON TABLE pubmed.view_epilepsy TO bherr WITH GRANT OPTION;
+GRANT ALL ON TABLE pubmed.view_epilepsy TO gallantm WITH GRANT OPTION;
+GRANT ALL ON TABLE pubmed.view_epilepsy TO rionbr WITH GRANT OPTION;
+GRANT ALL ON TABLE pubmed.view_epilepsy TO larzhang WITH GRANT OPTION;
+GRANT ALL ON TABLE pubmed.view_epilepsy TO xw47 WITH GRANT OPTION;
