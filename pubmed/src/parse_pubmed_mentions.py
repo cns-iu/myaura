@@ -69,7 +69,7 @@ if __name__ == '__main__':
         i += 1
 
         # SQL Query
-        sql = """SELECT pmid, article_title, abstract_text, pub_year FROM pubmed.view_medline_epilepsy offset %d limit 100""" % (offset)
+        sql = """SELECT pmid, article_title, abstract_text, pub_year FROM pubmed.view_epilepsy offset %d limit 100""" % (offset)
         q = engine_pubmed.execute(sql)
 
         # No pmid found
@@ -113,6 +113,4 @@ if __name__ == '__main__':
                         q = psql_mention.execute(sql)
                     except ValueError as error:
                         print("Error! Args: '{:s}'".format(error.args))
-                else:
-                    pass
 

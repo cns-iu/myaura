@@ -204,7 +204,7 @@ if __name__ == '__main__':
     """
     print('--- Exporting ---')
     # Graph gormat
-    wGfile = '../tmp-data/04-pubmed-epilepsy-network-{dicttimestamp:s}'.format(dicttimestamp=dicttimestamp)
+    wGfile = 'tmp-data/04-pubmed-epilepsy-network-{dicttimestamp:s}'.format(dicttimestamp=dicttimestamp)
     print('> gpickle')
     nx.write_gpickle(G, wGfile + '.gpickle')
     print('> graphml')
