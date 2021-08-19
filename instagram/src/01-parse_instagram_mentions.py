@@ -30,7 +30,7 @@ if __name__ == '__main__':
     dicttimestamp = '20180706'
 
     # Load Dictionary
-    dfD = load_dictionary(dicttimestamp=dicttimestamp, server='etrash-mysql-ddi-dictionaries')
+    dfD = load_dictionary(dicttimestamp=dicttimestamp, server='cns-postgres-myaura')
     # Build Parser Vocabulary
     tdp = build_term_parser(dfD)
 
@@ -66,7 +66,7 @@ if __name__ == '__main__':
         i = idx + 1
         per = i / n_users
         id_user = row['id']
-        print("> Parsing User '{id_user:d}': {i:d} of {n:d} ({per:.2%})".format(id_user=id_user, i=i, n=n_users, per=per))
+        print("> Parsing User '{id_user:s}': {i:d} of {n:d} ({per:.2%})".format(id_user=id_user, i=i, n=n_users, per=per))
 
         q = mongo_raw['instagram_post'].find(
             {
