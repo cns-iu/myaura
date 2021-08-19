@@ -125,5 +125,5 @@ if __name__ == '__main__':
     #
     # Export CSV
     #
-    df_s_freq.to_csv('../tmp-data/sider-drug-symptom.csv.gz')
+    df_s_freq.to_csv('../tmp-data/sider-drug-sideeffect.csv.gz')
     df_s_ind.to_csv('../tmp-data/sider-drug-indication.csv.gz')
