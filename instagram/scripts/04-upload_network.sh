@@ -38,6 +38,8 @@ CREATE TABLE IF NOT EXISTS $SCHEMA.edges (
     metric_distance DOUBLE PRECISION,
     is_metric BOOLEAN,
     s_value DOUBLE PRECISION,
+    ultrametric_distance DOUBLE PRECISION,
+    is_ultrametric BOOLEAN,
     CONSTRAINT pk_source_target PRIMARY KEY (source, target)
 );
 EOF
