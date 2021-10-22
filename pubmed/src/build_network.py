@@ -152,6 +152,28 @@ if __name__ == '__main__':
         #
         i += 1
 
+
+    i = 0
+    edges_seen = set()
+    for u, shortest_path_lenghts in all_pairs_dijkstra_path_length(G, weight='distance', disjunction=max):
+        if (i % 50 == 0):
+            print('> Dijkstra: {i:d} of {n:d} ({per:.2%})'.format(i=i, n=n, per=(i / n)))
+        #
+        for v, shortest_path_legth in shortest_path_lenghts.items():
+            # Skip ij == ji and self-loops
+            if (u, v) in edges_seen or (u == v):
+                continue
+
+            if not G.has_edge(u, v):
+                # For now, don't add edges that do not exist in the original graph.
+                # G.add_edge(u, v, **{'proximity': np.inf, 'distance': shortest_path_legth})
+                pass
+            else:
+                G[u][v]['ultrametric_distance'] = shortest_path_legth
+                G[u][v]['is_ultrametric'] = True if ((shortest_path_legth == G[u][v]['distance']) and (shortest_path_legth != np.inf)) else False
+        #
+        i += 1
+
     print('> Done.')
 
     print('--- Calculating S Values ---')
@@ -218,7 +240,8 @@ if __name__ == '__main__':
     sN.to_csv(wGfile + '-nodes.csv', index=False)
     #
     dfE = nx.to_pandas_edgelist(G)
-    cols = ['source', 'target', 'count', 'proximity', 'distance', 'is_original', 'metric_distance', 'is_metric', 's_value']
+    cols = ['source', 'target', 'count', 'proximity', 'distance', 'is_original', 'metric_distance', 'is_metric',
+            's_value', 'ultrametric_distance', 'is_ultrametric']
     dfE = dfE[cols]
     dfE.to_csv(wGfile + '-edges.csv', index=False)
 
