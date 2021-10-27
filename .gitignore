@@ -1,6 +1,5 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 /.sonarlint
-/raw-data
 /db-config.sh
 /db_config.ini
 /mysql.cnf
@@ -8,6 +7,10 @@
 /instagram/tmp-data/
 /twitter/tmp-data/
 /efwebsite/tmp-data/
+
+# data and tmp-data folders
+data/
+tmp-data/
 
 # compiled output
 /dist
