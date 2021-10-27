@@ -7,8 +7,8 @@
 import os
 import sys
 #
-# include_path = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, os.pardir, 'include'))
-include_path = '/nfs/nfs7/home/rionbr/myaura/include'
+include_path = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, os.pardir, 'include'))
+# include_path = '/nfs/nfs7/home/rionbr/myaura/include'
 sys.path.insert(0, include_path)
 #
 import numpy as np
@@ -43,7 +43,7 @@ if __name__ == '__main__':
     ])
 
     # Load Dictionary
-    dfD = load_dictionary(dicttimestamp=dicttimestamp, server='mysql-ddi-dictionaries')
+    dfD = load_dictionary(dicttimestamp=dicttimestamp, server='cns-postgres-myaura')
     # Build Parser Vocabulary
     tdp = build_term_parser(dfD)
 
