@@ -1,21 +1,21 @@
 #!/bin/bash
+source constants.sh
 set -ev
 
-prep_network() {
-  OUT=~/workspaces/tripods/map4sci/datasets/myaura/$1
-  time python3 ./map4sci/src/json2dot.py $OUT/network.json $OUT/network.dot > $OUT/log.txt
-}
+DATASETS=${DATASETS_HOME}
+for dataset in $(ls $DATASETS)
+do
+  OUT=${DATASETS}/${dataset}
+  echo $dataset
+  time python3 src/json2dot.py $OUT/network.json $OUT/network.dot > $OUT/log.csv
+done
 
-prep_network net_clinical_trials_20180706
-prep_network net_clinical_trials_20210321
-
-prep_network net_efwebsite_forums_20180706
-prep_network net_efwebsite_forums_20210321
-
-prep_network net_instagram_20180706
-prep_network net_instagram_20210321
-
-prep_network net_pubmed_epilepsy_20180706
-prep_network net_pubmed_epilepsy_20210321
-
-prep_network net_twitter_20180706
+for dataset in $(ls $DATASETS)
+do
+  OUT=${DATASETS}/${dataset}
+  echo $dataset
+  if [ ! -e $OUT/config.sh ]
+  then
+    cat src/config-template.sh | perl -pe "s/--DATASET--/${dataset}/g" > $OUT/config.sh
+  fi
+done

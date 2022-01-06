@@ -1,14 +1,15 @@
 -- \set dictionary dict_20180706
--- \set edges net_pubmed_epilepsy_20180706
+-- \set edges net_pubmed_epilepsy_20180706.edges
+-- \set edgetype is_metric
 
 WITH edges AS (
   SELECT source, target,
     -- normalize the proximity to 1 - 1,000 (1,000 being the highest)
     ROUND((
-      1 + proximity / (SELECT max(proximity) FROM :edges.edges) * 999
+      1 + proximity / (SELECT max(proximity) FROM :edges) * 999
     )::NUMERIC, 2) as weight
-  FROM :edges.edges
-  WHERE is_metric IS TRUE
+  FROM :edges
+  WHERE :edgetype IS TRUE
 ), nodes AS (
   SELECT id, token as label, id_parent as parent
   FROM dictionaries.:dictionary

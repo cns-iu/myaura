@@ -4,6 +4,7 @@
 /db_config.ini
 /mysql.cnf
 
+/raw-data
 /instagram/tmp-data/
 /twitter/tmp-data/
 /efwebsite/tmp-data/
