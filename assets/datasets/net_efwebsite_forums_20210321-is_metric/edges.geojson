@@ -100,7 +100,7 @@
         "dest": "290",
         "label": "Leuprolide -- Hysterectomy",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -168,7 +168,7 @@
         "dest": "543",
         "label": "Leuprolide -- Progesterone",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -202,7 +202,7 @@
         "dest": "477",
         "label": "Hysterectomy -- Conjugated estrogens",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -236,7 +236,7 @@
         "dest": "933",
         "label": "Hysterectomy -- Duck",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -338,7 +338,7 @@
         "dest": "317",
         "label": "Progesterone -- Progesterone",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -372,7 +372,7 @@
         "dest": "1747",
         "label": "Progesterone -- Anovulatory cycle",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -440,7 +440,7 @@
         "dest": "572",
         "label": "Conjugated estrogens -- Desipramine",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -508,7 +508,7 @@
         "dest": "68",
         "label": "Progesterone -- Menopause",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -542,7 +542,7 @@
         "dest": "327",
         "label": "Progesterone -- Blood oestrogen",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -576,7 +576,7 @@
         "dest": "788",
         "label": "Progesterone -- Medroxyprogesterone acetate",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -644,7 +644,7 @@
         "dest": "847",
         "label": "Progesterone -- Menorrhagia",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -746,7 +746,7 @@
         "dest": "499",
         "label": "Desipramine -- Warfarin",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -848,7 +848,7 @@
         "dest": "409",
         "label": "Menopause -- Puberty",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -916,7 +916,7 @@
         "dest": "207",
         "label": "Blood oestrogen -- Contraception",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -1086,7 +1086,7 @@
         "dest": "474",
         "label": "Levonorgestrel -- Ethinyl Estradiol",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -1120,7 +1120,7 @@
         "dest": "600",
         "label": "Levonorgestrel -- Intra-uterine contraceptive device",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -1392,7 +1392,7 @@
         "dest": "755",
         "label": "Intra-uterine contraceptive device -- Blood copper",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -1426,7 +1426,7 @@
         "dest": "207",
         "label": "Intra-uterine contraceptive device -- Contraception",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -1460,7 +1460,7 @@
         "dest": "1481",
         "label": "Drospirenone -- Gallbladder disorder",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -1494,7 +1494,7 @@
         "dest": "1985",
         "label": "Contraception -- Desogestrel",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -1732,7 +1732,7 @@
         "dest": "851",
         "label": "Testosterone -- Loss of libido",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -1834,7 +1834,7 @@
         "dest": "880",
         "label": "Sexual dysfunction -- Dyspareunia",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -2004,7 +2004,7 @@
         "dest": "1406",
         "label": "Factitious disorder -- Hypochondriasis",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -2242,7 +2242,7 @@
         "dest": "308",
         "label": "Low birth weight baby -- Failure to thrive",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -2310,7 +2310,7 @@
         "dest": "233",
         "label": "Low birth weight baby -- Premature baby",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -2344,7 +2344,7 @@
         "dest": "215",
         "label": "Low birth weight baby -- Vaginal haemorrhage",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -2378,7 +2378,7 @@
         "dest": "320",
         "label": "Failure to thrive -- Prenatal care",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -2446,7 +2446,7 @@
         "dest": "214",
         "label": "Vaginal haemorrhage -- Vomiting in pregnancy",
         "weight": "",
-        "level": 4
+        "level": 2
       }
     },
     {
@@ -2514,7 +2514,7 @@
         "dest": "11",
         "label": "Lutropin alfa -- Polycystic ovaries",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -2548,7 +2548,7 @@
         "dest": "129",
         "label": "Polycystic ovaries -- Infertility",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -2650,7 +2650,7 @@
         "dest": "654",
         "label": "Polycystic ovaries -- Hormone replacement therapy",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -2922,7 +2922,7 @@
         "dest": "680",
         "label": "Infertility -- Cod",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -3024,7 +3024,7 @@
         "dest": "608",
         "label": "Cod -- Dry skin",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -3058,7 +3058,7 @@
         "dest": "1095",
         "label": "Infertility male -- Sperm concentration",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -3092,7 +3092,7 @@
         "dest": "50",
         "label": "Somatotropin -- Carbamazepine",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -3126,7 +3126,7 @@
         "dest": "2007",
         "label": "Carbamazepine -- Cyclosporine",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -3160,7 +3160,7 @@
         "dest": "56",
         "label": "Carbamazepine -- Valproic Acid",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -3194,7 +3194,7 @@
         "dest": "1986",
         "label": "Carbamazepine -- Theophylline",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -3296,7 +3296,7 @@
         "dest": "943",
         "label": "Carbamazepine -- Brivaracetam",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -3704,7 +3704,7 @@
         "dest": "103",
         "label": "Valproic Acid -- Lamotrigine",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -3738,7 +3738,7 @@
         "dest": "168",
         "label": "Valproic Acid -- Gabapentin",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -3772,7 +3772,7 @@
         "dest": "227",
         "label": "Valproic Acid -- Ethosuximide",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -3806,7 +3806,7 @@
         "dest": "136",
         "label": "Valproic Acid -- Topiramate",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -3840,7 +3840,7 @@
         "dest": "213",
         "label": "Valproic Acid -- Zonisamide",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -3874,7 +3874,7 @@
         "dest": "1865",
         "label": "Valproic Acid -- Valpromide",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -3908,7 +3908,7 @@
         "dest": "1830",
         "label": "Valproic Acid -- Lettuce",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -3942,7 +3942,7 @@
         "dest": "1801",
         "label": "Valproic Acid -- Quahog",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -3976,7 +3976,7 @@
         "dest": "1691",
         "label": "Valproic Acid -- Bleeding time",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -4010,7 +4010,7 @@
         "dest": "1518",
         "label": "Valproic Acid -- Exophthalmos",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -4044,7 +4044,7 @@
         "dest": "47",
         "label": "Valproic Acid -- Fatigue",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -4078,7 +4078,7 @@
         "dest": "1503",
         "label": "Valproic Acid -- Fear of weight gain",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -4112,7 +4112,7 @@
         "dest": "1433",
         "label": "Valproic Acid -- Hepatic steatosis",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -4146,7 +4146,7 @@
         "dest": "1429",
         "label": "Valproic Acid -- Hepatotoxicity",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -4180,7 +4180,7 @@
         "dest": "1381",
         "label": "Valproic Acid -- Intermittent explosive disorder",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -4214,7 +4214,7 @@
         "dest": "1369",
         "label": "Valproic Acid -- Joint swelling",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -4248,7 +4248,7 @@
         "dest": "1207",
         "label": "Valproic Acid -- Platelet function test abnormal",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -4282,7 +4282,7 @@
         "dest": "1110",
         "label": "Valproic Acid -- Skin cancer",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -4316,7 +4316,7 @@
         "dest": "1068",
         "label": "Valproic Acid -- Teratogenicity",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -4350,7 +4350,7 @@
         "dest": "1050",
         "label": "Valproic Acid -- Toxic nodular goitre",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -4384,7 +4384,7 @@
         "dest": "52",
         "label": "Lamotrigine -- Insomnia",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -4452,7 +4452,7 @@
         "dest": "137",
         "label": "Lamotrigine -- Phenytoin",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -4520,7 +4520,7 @@
         "dest": "1981",
         "label": "Lamotrigine -- Atenolol",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5030,7 +5030,7 @@
         "dest": "1946",
         "label": "Topiramate -- Verapamil",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5064,7 +5064,7 @@
         "dest": "1701",
         "label": "Topiramate -- Binge eating",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5098,7 +5098,7 @@
         "dest": "1672",
         "label": "Topiramate -- Bone disorder",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5132,7 +5132,7 @@
         "dest": "1612",
         "label": "Topiramate -- Colon cancer",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5166,7 +5166,7 @@
         "dest": "1497",
         "label": "Topiramate -- Flat affect",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5200,7 +5200,7 @@
         "dest": "60",
         "label": "Topiramate -- Paraesthesia",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -5234,7 +5234,7 @@
         "dest": "1198",
         "label": "Topiramate -- Polyp",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5268,7 +5268,7 @@
         "dest": "1099",
         "label": "Topiramate -- Slow speech",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5302,7 +5302,7 @@
         "dest": "1059",
         "label": "Topiramate -- Thyroid disorder",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5336,7 +5336,7 @@
         "dest": "1051",
         "label": "Topiramate -- Torticollis",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5370,7 +5370,7 @@
         "dest": "362",
         "label": "Topiramate -- Weight decreased",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -5778,7 +5778,7 @@
         "dest": "955",
         "label": "Insomnia -- Rivastigmine",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5846,7 +5846,7 @@
         "dest": "1942",
         "label": "Phenytoin -- Furosemide",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5880,7 +5880,7 @@
         "dest": "1886",
         "label": "Phenytoin -- Sunitinib",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5914,7 +5914,7 @@
         "dest": "1885",
         "label": "Phenytoin -- Varenicline",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5948,7 +5948,7 @@
         "dest": "1629",
         "label": "Phenytoin -- Chemical poisoning",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -5982,7 +5982,7 @@
         "dest": "1507",
         "label": "Phenytoin -- Familial risk factor",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -6016,7 +6016,7 @@
         "dest": "1469",
         "label": "Phenytoin -- Gingival hyperplasia",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -6050,7 +6050,7 @@
         "dest": "1468",
         "label": "Phenytoin -- Gingival swelling",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -6084,7 +6084,7 @@
         "dest": "1394",
         "label": "Phenytoin -- Impatience",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -6118,7 +6118,7 @@
         "dest": "1182",
         "label": "Phenytoin -- Prostatitis",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -6152,7 +6152,7 @@
         "dest": "1049",
         "label": "Phenytoin -- Toxicity to various agents",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -6186,7 +6186,7 @@
         "dest": "61",
         "label": "Dizziness -- Nausea",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -6254,7 +6254,7 @@
         "dest": "174",
         "label": "Dizziness -- Vertigo",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -6696,7 +6696,7 @@
         "dest": "178",
         "label": "Rash -- Pruritus",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -6832,7 +6832,7 @@
         "dest": "818",
         "label": "Rash -- Rash pruritic",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -7002,7 +7002,7 @@
         "dest": "143",
         "label": "Paraesthesia -- Hypoaesthesia",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -7070,7 +7070,7 @@
         "dest": "885",
         "label": "Paraesthesia -- Disturbance in attention",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -7104,7 +7104,7 @@
         "dest": "302",
         "label": "Weight decreased -- Weight",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -7274,7 +7274,7 @@
         "dest": "942",
         "label": "Modafinil -- Armodafinil",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -7376,7 +7376,7 @@
         "dest": "204",
         "label": "Modafinil -- Narcolepsy",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -7444,7 +7444,7 @@
         "dest": "903",
         "label": "Narcolepsy -- Boredom",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -7478,7 +7478,7 @@
         "dest": "899",
         "label": "Narcolepsy -- Cataplexy",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -7512,7 +7512,7 @@
         "dest": "1",
         "label": "Pancrelipase -- Convulsion",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -7614,7 +7614,7 @@
         "dest": "2003",
         "label": "Convulsion -- Glutamic Acid",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -7648,7 +7648,7 @@
         "dest": "2002",
         "label": "Convulsion -- Glycine",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -7682,7 +7682,7 @@
         "dest": "2000",
         "label": "Convulsion -- Creatine",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -7716,7 +7716,7 @@
         "dest": "1999",
         "label": "Convulsion -- Ethchlorvynol",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -7750,7 +7750,7 @@
         "dest": "1996",
         "label": "Convulsion -- Erythromycin",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -7818,7 +7818,7 @@
         "dest": "1995",
         "label": "Convulsion -- Azithromycin",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -7852,7 +7852,7 @@
         "dest": "1993",
         "label": "Convulsion -- Pantoprazole",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -7886,7 +7886,7 @@
         "dest": "1991",
         "label": "Convulsion -- Temazepam",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -7920,7 +7920,7 @@
         "dest": "1990",
         "label": "Convulsion -- Cabergoline",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -7988,7 +7988,7 @@
         "dest": "163",
         "label": "Convulsion -- Amnesia",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -8022,7 +8022,7 @@
         "dest": "205",
         "label": "Convulsion -- Grand mal convulsion",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -8056,7 +8056,7 @@
         "dest": "1983",
         "label": "Convulsion -- Hydromorphone",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -8090,7 +8090,7 @@
         "dest": "1977",
         "label": "Convulsion -- Diltiazem",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -8974,7 +8974,7 @@
         "dest": "74",
         "label": "Convulsion -- Surgery",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -10572,7 +10572,7 @@
         "dest": "222",
         "label": "Convulsion -- Aura",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -16896,7 +16896,7 @@
         "dest": "2005",
         "label": "Epilepsy -- Serine",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -16998,7 +16998,7 @@
         "dest": "100",
         "label": "Epilepsy -- Childhood",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -17270,7 +17270,7 @@
         "dest": "219",
         "label": "Epilepsy -- Disability",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -19276,7 +19276,7 @@
         "dest": "2004",
         "label": "Anxiety -- L-Tyrosine",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -19310,7 +19310,7 @@
         "dest": "110",
         "label": "Anxiety -- Nervousness",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -19344,7 +19344,7 @@
         "dest": "202",
         "label": "Anxiety -- Panic attack",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -19378,7 +19378,7 @@
         "dest": "97",
         "label": "Anxiety -- Fear",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -19854,7 +19854,7 @@
         "dest": "811",
         "label": "Stress -- Stress at work",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -19990,7 +19990,7 @@
         "dest": "264",
         "label": "Levetiracetam -- Lacosamide",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -20024,7 +20024,7 @@
         "dest": "188",
         "label": "Levetiracetam -- Irritability",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -20772,7 +20772,7 @@
         "dest": "388",
         "label": "Grand mal convulsion -- Petit mal epilepsy",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -20806,7 +20806,7 @@
         "dest": "253",
         "label": "Grand mal convulsion -- Partial seizures",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -21384,7 +21384,7 @@
         "dest": "309",
         "label": "Electroencephalogram -- Computerised tomogram",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -21894,7 +21894,7 @@
         "dest": "1919",
         "label": "Naloxone -- Buprenorphine",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -21928,7 +21928,7 @@
         "dest": "91",
         "label": "Surgery -- Vagal nerve stimulator implantation",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -21996,7 +21996,7 @@
         "dest": "17",
         "label": "Surgery -- Pain",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -22098,7 +22098,7 @@
         "dest": "304",
         "label": "Surgery -- Scar",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -22540,7 +22540,7 @@
         "dest": "852",
         "label": "Surgery -- Local anaesthesia",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -22812,7 +22812,7 @@
         "dest": "121",
         "label": "Aura -- Deja vu",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -23016,7 +23016,7 @@
         "dest": "821",
         "label": "Childhood -- Psychotherapy",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -23084,7 +23084,7 @@
         "dest": "878",
         "label": "Disability -- Economic problem",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -23866,7 +23866,7 @@
         "dest": "356",
         "label": "Ethanol -- Alcoholic",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -23934,7 +23934,7 @@
         "dest": "760",
         "label": "Ethanol -- Alcohol abuse",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -24172,7 +24172,7 @@
         "dest": "882",
         "label": "Clobazam -- Drug withdrawal convulsions",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -24512,7 +24512,7 @@
         "dest": "1943",
         "label": "Azathioprine -- Mycophenolate mofetil",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -24648,7 +24648,7 @@
         "dest": "14",
         "label": "Muscle twitching -- Tremor",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -25192,7 +25192,7 @@
         "dest": "1982",
         "label": "Pain -- Methadone",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -26144,7 +26144,7 @@
         "dest": "153",
         "label": "Deja vu -- Simple partial seizures",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -26178,7 +26178,7 @@
         "dest": "119",
         "label": "Deja vu -- Feeling abnormal",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -26314,7 +26314,7 @@
         "dest": "737",
         "label": "Deja vu -- Fumbling",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -26416,7 +26416,7 @@
         "dest": "668",
         "label": "Adolescence -- Cyanosis",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -26484,7 +26484,7 @@
         "dest": "678",
         "label": "Mood swings -- Abasia",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -26518,7 +26518,7 @@
         "dest": "665",
         "label": "Completed suicide -- Depressed mood",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -26552,7 +26552,7 @@
         "dest": "467",
         "label": "Alcoholic -- Drug abuser",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -26722,7 +26722,7 @@
         "dest": "30",
         "label": "Tremor -- Fall",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -26960,7 +26960,7 @@
         "dest": "254",
         "label": "Myoclonus -- Myoclonic epilepsy",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -26994,7 +26994,7 @@
         "dest": "79",
         "label": "Muscle spasms -- Infantile spasms",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -27674,7 +27674,7 @@
         "dest": "29",
         "label": "Hepatitis C -- Hiccups",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -27708,7 +27708,7 @@
         "dest": "111",
         "label": "Hepatitis C -- Feeling hot",
         "weight": "",
-        "level": 1
+        "level": 2
       }
     },
     {
@@ -27742,7 +27742,7 @@
         "dest": "924",
         "label": "Hepatitis C -- Lanolin",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -27844,7 +27844,7 @@
         "dest": "582",
         "label": "Hepatitis C -- Wheezing",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -27912,7 +27912,7 @@
         "dest": "645",
         "label": "Hepatitis C -- Ovarian cancer",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -27946,7 +27946,7 @@
         "dest": "901",
         "label": "Hepatitis C -- Bronchiolitis",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -27980,7 +27980,7 @@
         "dest": "746",
         "label": "Hepatitis C -- Delivery",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -28014,7 +28014,7 @@
         "dest": "666",
         "label": "Hepatitis C -- Dental caries",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -28048,7 +28048,7 @@
         "dest": "849",
         "label": "Hepatitis C -- Mastitis",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -28082,7 +28082,7 @@
         "dest": "848",
         "label": "Hepatitis C -- Mastitis postpartum",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -28116,7 +28116,7 @@
         "dest": "826",
         "label": "Hepatitis C -- Plastic surgery",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -28150,7 +28150,7 @@
         "dest": "810",
         "label": "Hepatitis C -- Sudden infant death syndrome",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -28184,7 +28184,7 @@
         "dest": "805",
         "label": "Hepatitis C -- Tuberculosis",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -28286,7 +28286,7 @@
         "dest": "59",
         "label": "Feeling hot -- Polymenorrhoea",
         "weight": "",
-        "level": 1
+        "level": 3
       }
     },
     {
@@ -28320,7 +28320,7 @@
         "dest": "726",
         "label": "Feeling hot -- Laziness",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -28592,7 +28592,7 @@
         "dest": "151",
         "label": "Cannabis -- Ethanol",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -29238,7 +29238,7 @@
         "dest": "426",
         "label": "Cyanocobalamin -- Choline",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -29272,7 +29272,7 @@
         "dest": "401",
         "label": "Choline -- Inositol nicotinate",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -29306,7 +29306,7 @@
         "dest": "1785",
         "label": "Choline -- myo-inositol",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -29374,7 +29374,7 @@
         "dest": "422",
         "label": "Inositol nicotinate -- Pantothenic acid",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -29408,7 +29408,7 @@
         "dest": "318",
         "label": "Nicotinamide -- Pyridoxine",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -29476,7 +29476,7 @@
         "dest": "73",
         "label": "Pantothenic acid -- Niacin",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -29578,7 +29578,7 @@
         "dest": "164",
         "label": "Biotin -- Alopecia",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -29680,7 +29680,7 @@
         "dest": "964",
         "label": "Alopecia -- Minoxidil",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -29714,7 +29714,7 @@
         "dest": "165",
         "label": "Alopecia -- Acne",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -30054,7 +30054,7 @@
         "dest": "755",
         "label": "Zinc -- Blood copper",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -30394,7 +30394,7 @@
         "dest": "1947",
         "label": "Pyridoxine -- Leucovorin",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -30428,7 +30428,7 @@
         "dest": "1008",
         "label": "Pyridoxine -- Vitamin B6 deficiency",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -30496,7 +30496,7 @@
         "dest": "946",
         "label": "Dexpanthenol -- Magnesium oxide",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -30700,7 +30700,7 @@
         "dest": "229",
         "label": "Vitamin C -- Vitamin E",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -30768,7 +30768,7 @@
         "dest": "861",
         "label": "Vitamin E -- Hypovitaminosis",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -30802,7 +30802,7 @@
         "dest": "698",
         "label": "Vitamin E -- Vitamin E deficiency",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -30836,7 +30836,7 @@
         "dest": "225",
         "label": "Vitamin E deficiency -- Grape",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -30870,7 +30870,7 @@
         "dest": "378",
         "label": "Riboflavin -- Nicotinamide",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -30904,7 +30904,7 @@
         "dest": "384",
         "label": "Riboflavin -- Thiamine",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -30972,7 +30972,7 @@
         "dest": "1881",
         "label": "Folic Acid -- Ginkgo biloba",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -31006,7 +31006,7 @@
         "dest": "1757",
         "label": "Folic Acid -- Amniocentesis",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -31040,7 +31040,7 @@
         "dest": "83",
         "label": "Folic Acid -- Pregnancy",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -31074,7 +31074,7 @@
         "dest": "1009",
         "label": "Folic Acid -- Vitamin B12 deficiency",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -31890,7 +31890,7 @@
         "dest": "806",
         "label": "Married -- Trisomy 21",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -31958,7 +31958,7 @@
         "dest": "1666",
         "label": "Breast feeding -- Bottle feeding",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -32026,7 +32026,7 @@
         "dest": "245",
         "label": "Spina bifida -- Cleft lip",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -32094,7 +32094,7 @@
         "dest": "87",
         "label": "Divorced -- Bite",
         "weight": "",
-        "level": 1
+        "level": 2
       }
     },
     {
@@ -32128,7 +32128,7 @@
         "dest": "822",
         "label": "Divorced -- Psychiatric symptom",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -32162,7 +32162,7 @@
         "dest": "576",
         "label": "Fish oil -- Propranolol",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -32366,7 +32366,7 @@
         "dest": "237",
         "label": "Methylcobalamin -- Nerve injury",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -32400,7 +32400,7 @@
         "dest": "636",
         "label": "Methylcobalamin -- Tetanus",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -32536,7 +32536,7 @@
         "dest": "240",
         "label": "Tetanus -- Incontinence",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -32570,7 +32570,7 @@
         "dest": "224",
         "label": "Broccoli -- Spinach",
         "weight": "",
-        "level": 1
+        "level": 2
       }
     },
     {
@@ -32604,7 +32604,7 @@
         "dest": "568",
         "label": "Broccoli -- Cultivated mushroom",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -32672,7 +32672,7 @@
         "dest": "929",
         "label": "Broccoli -- Cauliflower",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -32944,7 +32944,7 @@
         "dest": "225",
         "label": "Spinach -- Grape",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -32978,7 +32978,7 @@
         "dest": "528",
         "label": "Spinach -- Salmon",
         "weight": "",
-        "level": 1
+        "level": 2
       }
     },
     {
@@ -33012,7 +33012,7 @@
         "dest": "399",
         "label": "Spinach -- Lima bean",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -33080,7 +33080,7 @@
         "dest": "936",
         "label": "Cauliflower -- Cabbage",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -33420,7 +33420,7 @@
         "dest": "803",
         "label": "Vegetarian -- Vegan",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -33454,7 +33454,7 @@
         "dest": "930",
         "label": "Lemon -- Blueberry",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -33488,7 +33488,7 @@
         "dest": "1817",
         "label": "Lemon -- Lime (citrus)",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -33522,7 +33522,7 @@
         "dest": "1821",
         "label": "Mackerel -- Herring",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -33556,7 +33556,7 @@
         "dest": "795",
         "label": "Vegan -- Chia",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -33896,7 +33896,7 @@
         "dest": "766",
         "label": "Aspartame -- Saccharin",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -33930,7 +33930,7 @@
         "dest": "1679",
         "label": "Aspartame -- Blood methanol",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -33964,7 +33964,7 @@
         "dest": "263",
         "label": "Corn -- Casein",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -34066,7 +34066,7 @@
         "dest": "768",
         "label": "Corn -- Starch, corn",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -34100,7 +34100,7 @@
         "dest": "70",
         "label": "Amino acids -- Laboratory test",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -34134,7 +34134,7 @@
         "dest": "794",
         "label": "Amino acids -- L-Glutamine",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -34202,7 +34202,7 @@
         "dest": "331",
         "label": "Casein -- Low carbohydrate diet",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -34236,7 +34236,7 @@
         "dest": "279",
         "label": "Casein -- Cow milk",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -34406,7 +34406,7 @@
         "dest": "502",
         "label": "Fructose -- Tic",
         "weight": "",
-        "level": 1
+        "level": 2
       }
     },
     {
@@ -34508,7 +34508,7 @@
         "dest": "922",
         "label": "Starch, corn -- Gelatin",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -34678,7 +34678,7 @@
         "dest": "765",
         "label": "Coeliac disease -- Abdominal distension",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -34848,7 +34848,7 @@
         "dest": "719",
         "label": "Coeliac disease -- Neurological symptom",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -34882,7 +34882,7 @@
         "dest": "312",
         "label": "Tic -- Benign rolandic epilepsy",
         "weight": "",
-        "level": 1
+        "level": 2
       }
     },
     {
@@ -35086,7 +35086,7 @@
         "dest": "236",
         "label": "Calcium -- Osteoporosis",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -35222,7 +35222,7 @@
         "dest": "868",
         "label": "Calcium -- High fat diet",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -35324,7 +35324,7 @@
         "dest": "971",
         "label": "Vitamin D -- Cholecalciferol",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -35494,7 +35494,7 @@
         "dest": "550",
         "label": "Osteoporosis -- Osteopenia",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -35596,7 +35596,7 @@
         "dest": "66",
         "label": "Blood sodium -- Blood test",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -35800,7 +35800,7 @@
         "dest": "1796",
         "label": "Iron -- Ferrous asparto glycinate",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -35834,7 +35834,7 @@
         "dest": "979",
         "label": "Cimicifuga racemosa -- Lobelia",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -35868,7 +35868,7 @@
         "dest": "1792",
         "label": "Vitamin D deficiency -- Cod liver oil",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -35902,7 +35902,7 @@
         "dest": "373",
         "label": "Osteopenia -- Bone loss",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -35936,7 +35936,7 @@
         "dest": "533",
         "label": "Osteopenia -- Alendronic acid",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -36004,7 +36004,7 @@
         "dest": "1686",
         "label": "Blood phosphorus -- Blood chloride",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -36072,7 +36072,7 @@
         "dest": "501",
         "label": "Bone loss -- Tooth loss",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -36140,7 +36140,7 @@
         "dest": "783",
         "label": "Alendronic acid -- Risedronate",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -36174,7 +36174,7 @@
         "dest": "555",
         "label": "Alendronic acid -- Fracture",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -36208,7 +36208,7 @@
         "dest": "339",
         "label": "Cholesterol -- Blood triglycerides",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -36344,7 +36344,7 @@
         "dest": "139",
         "label": "Blood triglycerides -- Overweight",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -36480,7 +36480,7 @@
         "dest": "538",
         "label": "Overweight -- Snoring",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -36616,7 +36616,7 @@
         "dest": "38",
         "label": "Constipation -- Diarrhoea",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -36718,7 +36718,7 @@
         "dest": "420",
         "label": "Snoring -- Apnoea",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -36786,7 +36786,7 @@
         "dest": "160",
         "label": "Glucose -- Blood ketone body",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -36854,7 +36854,7 @@
         "dest": "234",
         "label": "Glucose -- Positron emission tomogram",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -36922,7 +36922,7 @@
         "dest": "331",
         "label": "Blood ketone body -- Low carbohydrate diet",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -36956,7 +36956,7 @@
         "dest": "238",
         "label": "Blood ketone body -- Ketosis",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -36990,7 +36990,7 @@
         "dest": "330",
         "label": "Blood ketone body -- Starvation",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -37262,7 +37262,7 @@
         "dest": "556",
         "label": "Positron emission tomogram -- Excoriation",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -37466,7 +37466,7 @@
         "dest": "270",
         "label": "Ketosis -- Fasting",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -37500,7 +37500,7 @@
         "dest": "492",
         "label": "Ketosis -- Breath odour",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -37636,7 +37636,7 @@
         "dest": "86",
         "label": "Excoriation -- Blindness",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -37670,7 +37670,7 @@
         "dest": "406",
         "label": "Excoriation -- Thinking abnormal",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -37806,7 +37806,7 @@
         "dest": "1712",
         "label": "Breath odour -- Azotaemia",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -37840,7 +37840,7 @@
         "dest": "1581",
         "label": "Breath odour -- Dental disorder prophylaxis",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -37874,7 +37874,7 @@
         "dest": "1491",
         "label": "Breath odour -- Foetor hepaticus",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -38146,7 +38146,7 @@
         "dest": "167",
         "label": "Beef -- Garlic",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -38180,7 +38180,7 @@
         "dest": "208",
         "label": "Beef -- Pork",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -38214,7 +38214,7 @@
         "dest": "314",
         "label": "Garlic -- Papaya",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -38452,7 +38452,7 @@
         "dest": "616",
         "label": "Papaya -- Mango",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -38520,7 +38520,7 @@
         "dest": "296",
         "label": "Mango -- Squash",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -38690,7 +38690,7 @@
         "dest": "133",
         "label": "Chicken -- Turkey",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -38792,7 +38792,7 @@
         "dest": "1611",
         "label": "Endoscopy -- Colonoscopy",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -38826,7 +38826,7 @@
         "dest": "557",
         "label": "Benign rolandic epilepsy -- Enuresis",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -38996,7 +38996,7 @@
         "dest": "614",
         "label": "Egg -- Goose",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -39030,7 +39030,7 @@
         "dest": "591",
         "label": "Egg -- Scarlet fever",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -39064,7 +39064,7 @@
         "dest": "1395",
         "label": "Malabsorption -- Impaired gastric emptying",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -39166,7 +39166,7 @@
         "dest": "911",
         "label": "Lavender -- Aromatherapy",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -39200,7 +39200,7 @@
         "dest": "752",
         "label": "Lavender -- Caregiver",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -39336,7 +39336,7 @@
         "dest": "41",
         "label": "Brain injury -- Injury",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -39438,7 +39438,7 @@
         "dest": "517",
         "label": "Status epilepticus -- Hospitalisation",
         "weight": "",
-        "level": 2
+        "level": 4
       }
     },
     {
@@ -39506,7 +39506,7 @@
         "dest": "817",
         "label": "Status epilepticus -- Rasmussen encephalitis",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -39574,7 +39574,7 @@
         "dest": "1975",
         "label": "Injury -- Clozapine",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -39608,7 +39608,7 @@
         "dest": "221",
         "label": "Injury -- Craniocerebral injury",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -39676,7 +39676,7 @@
         "dest": "247",
         "label": "Injury -- Accident",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -39914,7 +39914,7 @@
         "dest": "646",
         "label": "Craniocerebral injury -- Multiple fractures",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -39948,7 +39948,7 @@
         "dest": "825",
         "label": "Craniocerebral injury -- Post concussion syndrome",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -40220,7 +40220,7 @@
         "dest": "708",
         "label": "Chronic fatigue syndrome -- Somatoform disorder",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -40424,7 +40424,7 @@
         "dest": "703",
         "label": "Norepinephrine -- Tourette's disorder",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -40458,7 +40458,7 @@
         "dest": "374",
         "label": "Dopamine -- Blepharospasm",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -40526,7 +40526,7 @@
         "dest": "395",
         "label": "Blepharospasm -- Eye pain",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -40696,7 +40696,7 @@
         "dest": "761",
         "label": "Blepharospasm -- Acupressure",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -40832,7 +40832,7 @@
         "dest": "23",
         "label": "Nausea -- Vomiting",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -40900,7 +40900,7 @@
         "dest": "6",
         "label": "Nausea -- Hyperhidrosis",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -41512,7 +41512,7 @@
         "dest": "326",
         "label": "Bite -- Clonic convulsion",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -41580,7 +41580,7 @@
         "dest": "844",
         "label": "Primigravida -- Multigravida",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -41648,7 +41648,7 @@
         "dest": "678",
         "label": "Hypotonia -- Abasia",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -41750,7 +41750,7 @@
         "dest": "149",
         "label": "Asparagus -- Broccoli",
         "weight": "",
-        "level": 1
+        "level": 2
       }
     },
     {
@@ -41784,7 +41784,7 @@
         "dest": "472",
         "label": "Asparagus -- Pumpkin",
         "weight": "",
-        "level": 1
+        "level": 2
       }
     },
     {
@@ -41852,7 +41852,7 @@
         "dest": "76",
         "label": "Pumpkin -- Profound mental retardation",
         "weight": "",
-        "level": 1
+        "level": 2
       }
     },
     {
@@ -41954,7 +41954,7 @@
         "dest": "296",
         "label": "Lima bean -- Squash",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -42022,7 +42022,7 @@
         "dest": "681",
         "label": "Lima bean -- Kiwi fruit",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -42056,7 +42056,7 @@
         "dest": "1835",
         "label": "Celery -- Carrot",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -42158,7 +42158,7 @@
         "dest": "639",
         "label": "Paraldehyde -- Social avoidant behaviour",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -42328,7 +42328,7 @@
         "dest": "315",
         "label": "Nicotine -- Acetylcholine",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -42396,7 +42396,7 @@
         "dest": "27",
         "label": "Acetylcholine -- Epinephrine",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -42430,7 +42430,7 @@
         "dest": "313",
         "label": "Acetylcholine -- Alcohol use",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -42702,7 +42702,7 @@
         "dest": "101",
         "label": "Blood insulin -- Blood glucose decreased",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -42838,7 +42838,7 @@
         "dest": "764",
         "label": "Rapid eye movements sleep abnormal -- Abnormal behaviour",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -43110,7 +43110,7 @@
         "dest": "738",
         "label": "Diabetes mellitus -- Food poisoning",
         "weight": "",
-        "level": 2
+        "level": 4
       }
     },
     {
@@ -43314,7 +43314,7 @@
         "dest": "1941",
         "label": "Caffeine -- Ergotamine",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -43382,7 +43382,7 @@
         "dest": "643",
         "label": "Caffeine -- Plague",
         "weight": "",
-        "level": 2
+        "level": 4
       }
     },
     {
@@ -43416,7 +43416,7 @@
         "dest": "478",
         "label": "Dextroamphetamine -- Amphetamine",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -43518,7 +43518,7 @@
         "dest": "649",
         "label": "Dextroamphetamine -- Meningioma",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -43654,7 +43654,7 @@
         "dest": "702",
         "label": "Amphetamine -- Trichotillomania",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -43756,7 +43756,7 @@
         "dest": "249",
         "label": "Tea leaf -- Cocoa",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -43858,7 +43858,7 @@
         "dest": "284",
         "label": "Trichotillomania -- Fluoxetine",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -44062,7 +44062,7 @@
         "dest": "1617",
         "label": "Single parent family -- Clavicle fracture",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -44096,7 +44096,7 @@
         "dest": "1193",
         "label": "Single parent family -- Postictal state",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -44198,7 +44198,7 @@
         "dest": "770",
         "label": "Chamomile -- Sage",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -44232,7 +44232,7 @@
         "dest": "796",
         "label": "Chamomile -- Passion flower",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -44266,7 +44266,7 @@
         "dest": "277",
         "label": "Acetylsalicylic acid -- Evening primrose oil",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -44300,7 +44300,7 @@
         "dest": "183",
         "label": "Acetylsalicylic acid -- Ibuprofen",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -44334,7 +44334,7 @@
         "dest": "969",
         "label": "Acetylsalicylic acid -- Butalbital",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -44402,7 +44402,7 @@
         "dest": "172",
         "label": "Ibuprofen -- Acetaminophen",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -44436,7 +44436,7 @@
         "dest": "776",
         "label": "Sodium bicarbonate -- Citric Acid",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -44504,7 +44504,7 @@
         "dest": "381",
         "label": "Acetaminophen -- Hydrocodone",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -44538,7 +44538,7 @@
         "dest": "7",
         "label": "Acetaminophen -- Pyrexia",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -44640,7 +44640,7 @@
         "dest": "1907",
         "label": "Acetaminophen -- Dimenhydrinate",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -44674,7 +44674,7 @@
         "dest": "1636",
         "label": "Acetaminophen -- Cataract",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -44708,7 +44708,7 @@
         "dest": "685",
         "label": "Calcium Carbonate -- Magnesium hydroxide",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -44742,7 +44742,7 @@
         "dest": "146",
         "label": "Hydrocodone -- Analgesic therapy",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -44776,7 +44776,7 @@
         "dest": "1984",
         "label": "Hydrocodone -- Codeine",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -45048,7 +45048,7 @@
         "dest": "784",
         "label": "Phenylephrine -- Guaifenesin",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -45082,7 +45082,7 @@
         "dest": "1896",
         "label": "Phenylephrine -- Chlorphenamine",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -45116,7 +45116,7 @@
         "dest": "686",
         "label": "Magnesium hydroxide -- Aluminum hydroxide",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -45150,7 +45150,7 @@
         "dest": "114",
         "label": "Analgesic therapy -- Caesarean section",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -45184,7 +45184,7 @@
         "dest": "1997",
         "label": "Influenza -- Oseltamivir",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -45354,7 +45354,7 @@
         "dest": "961",
         "label": "Guaifenesin -- Dextromethorphan",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -45490,7 +45490,7 @@
         "dest": "4",
         "label": "Asthma -- Wound",
         "weight": "",
-        "level": 1
+        "level": 2
       }
     },
     {
@@ -45898,7 +45898,7 @@
         "dest": "72",
         "label": "Attention deficit/hyperactivity disorder -- Autism",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -46272,7 +46272,7 @@
         "dest": "394",
         "label": "Tooth loss -- Homicide",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -46306,7 +46306,7 @@
         "dest": "716",
         "label": "Risedronate -- Osteonecrosis",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -46340,7 +46340,7 @@
         "dest": "551",
         "label": "Fracture -- Joint dislocation",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -46476,7 +46476,7 @@
         "dest": "502",
         "label": "Arnold-Chiari malformation -- Tic",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -46510,7 +46510,7 @@
         "dest": "261",
         "label": "Arnold-Chiari malformation -- Cyst",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -46578,7 +46578,7 @@
         "dest": "763",
         "label": "Cyst -- Abortion",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -46680,7 +46680,7 @@
         "dest": "830",
         "label": "Cyst -- Ovarian cyst",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -46714,7 +46714,7 @@
         "dest": "692",
         "label": "Pea -- Trimethoprim",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -46748,7 +46748,7 @@
         "dest": "856",
         "label": "Ovarian cyst -- Kidney infection",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -46782,7 +46782,7 @@
         "dest": "688",
         "label": "Trimethoprim -- Sulfamethoxazole",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -46884,7 +46884,7 @@
         "dest": "124",
         "label": "Fluoxetine -- Quetiapine",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -46952,7 +46952,7 @@
         "dest": "108",
         "label": "Fluoxetine -- Sertraline",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -46986,7 +46986,7 @@
         "dest": "281",
         "label": "Quetiapine -- Aripiprazole",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -47054,7 +47054,7 @@
         "dest": "813",
         "label": "Sertraline -- Serotonin syndrome",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -47088,7 +47088,7 @@
         "dest": "627",
         "label": "Aripiprazole -- Fluphenazine",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -47122,7 +47122,7 @@
         "dest": "792",
         "label": "Aripiprazole -- Ziprasidone",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -47292,7 +47292,7 @@
         "dest": "340",
         "label": "Ziprasidone -- Bipolar I disorder",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -47394,7 +47394,7 @@
         "dest": "506",
         "label": "Bipolar I disorder -- Restless legs syndrome",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -47428,7 +47428,7 @@
         "dest": "744",
         "label": "Bipolar I disorder -- Drug abuse",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -47598,7 +47598,7 @@
         "dest": "211",
         "label": "Cocaine -- Ecstasy",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -47700,7 +47700,7 @@
         "dest": "1994",
         "label": "Hypotension -- Midodrine",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -47836,7 +47836,7 @@
         "dest": "20",
         "label": "Blood pressure -- Heart rate",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -48006,7 +48006,7 @@
         "dest": "904",
         "label": "Syncope -- Blood pressure decreased",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -48074,7 +48074,7 @@
         "dest": "809",
         "label": "Heart rate -- Tachycardia",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -48448,7 +48448,7 @@
         "dest": "467",
         "label": "Heroin -- Drug abuser",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -48482,7 +48482,7 @@
         "dest": "382",
         "label": "Heroin -- Cocaine",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -48516,7 +48516,7 @@
         "dest": "938",
         "label": "Suicidal ideation -- Eslicarbazepine acetate",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -48550,7 +48550,7 @@
         "dest": "243",
         "label": "Dissociation -- Depersonalisation",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -48652,7 +48652,7 @@
         "dest": "886",
         "label": "Depersonalisation -- Derealisation",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -48856,7 +48856,7 @@
         "dest": "168",
         "label": "Pregabalin -- Gabapentin",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -48890,7 +48890,7 @@
         "dest": "1501",
         "label": "Pregabalin -- Feeling drunk",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -48924,7 +48924,7 @@
         "dest": "1080",
         "label": "Pregabalin -- Suicidal behaviour",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -48958,7 +48958,7 @@
         "dest": "137",
         "label": "Phenobarbital -- Phenytoin",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -48992,7 +48992,7 @@
         "dest": "135",
         "label": "Phenobarbital -- Primidone",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -49366,7 +49366,7 @@
         "dest": "941",
         "label": "Primidone -- Desvenlafaxine",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -49468,7 +49468,7 @@
         "dest": "1373",
         "label": "Yellow skin -- Jaundice",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -49604,7 +49604,7 @@
         "dest": "16",
         "label": "Agitation -- Restlessness",
         "weight": "",
-        "level": 1
+        "level": 2
       }
     },
     {
@@ -49672,7 +49672,7 @@
         "dest": "837",
         "label": "Restlessness -- Negativism",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -49706,7 +49706,7 @@
         "dest": "854",
         "label": "Restlessness -- Lip swelling",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -49876,7 +49876,7 @@
         "dest": "181",
         "label": "Dysarthria -- Dysphemia",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -49910,7 +49910,7 @@
         "dest": "346",
         "label": "Dysphemia -- Speech rehabilitation",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -49944,7 +49944,7 @@
         "dest": "442",
         "label": "Speech rehabilitation -- Aphasia",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -50046,7 +50046,7 @@
         "dest": "647",
         "label": "Aphasia -- Miosis",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -50148,7 +50148,7 @@
         "dest": "804",
         "label": "Gastroenteritis viral -- Ulcer",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -50352,7 +50352,7 @@
         "dest": "860",
         "label": "Juvenile myoclonic epilepsy -- Idiopathic generalised epilepsy",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -50454,7 +50454,7 @@
         "dest": "1989",
         "label": "Infantile spasms -- Dapsone",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -50522,7 +50522,7 @@
         "dest": "958",
         "label": "Infantile spasms -- Prednisolone",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -50556,7 +50556,7 @@
         "dest": "585",
         "label": "Infantile spasms -- Tuberous sclerosis",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -50760,7 +50760,7 @@
         "dest": "1912",
         "label": "Prednisone -- Methylprednisolone",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -50794,7 +50794,7 @@
         "dest": "1875",
         "label": "Prednisone -- Hydroxychloroquine",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -50828,7 +50828,7 @@
         "dest": "673",
         "label": "Tuberous sclerosis -- Becker's naevus",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -50862,7 +50862,7 @@
         "dest": "725",
         "label": "Tuberous sclerosis -- Long QT syndrome",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -50896,7 +50896,7 @@
         "dest": "838",
         "label": "Feeling of relaxation -- Negative thoughts",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -51066,7 +51066,7 @@
         "dest": "9",
         "label": "Psychotic disorder -- Hallucination",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -51202,7 +51202,7 @@
         "dest": "595",
         "label": "Psychotic disorder -- Postictal psychosis",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -51236,7 +51236,7 @@
         "dest": "888",
         "label": "Psychotic disorder -- Delirium",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -51746,7 +51746,7 @@
         "dest": "898",
         "label": "Mania -- Catatonia",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -51814,7 +51814,7 @@
         "dest": "360",
         "label": "Postictal psychosis -- Risperidone",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -51882,7 +51882,7 @@
         "dest": "1887",
         "label": "Schizoaffective disorder -- Paliperidone",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -51950,7 +51950,7 @@
         "dest": "593",
         "label": "Risperidone -- Reflexology",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -51984,7 +51984,7 @@
         "dest": "1961",
         "label": "Dronabinol -- Nabilone",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -52018,7 +52018,7 @@
         "dest": "939",
         "label": "Dronabinol -- Cannabidiol",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -52052,7 +52052,7 @@
         "dest": "374",
         "label": "Reflexology -- Blepharospasm",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -52086,7 +52086,7 @@
         "dest": "201",
         "label": "Screaming -- Sleep terror",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -52120,7 +52120,7 @@
         "dest": "48",
         "label": "Screaming -- Crying",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -52154,7 +52154,7 @@
         "dest": "704",
         "label": "Screaming -- Teething",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -52324,7 +52324,7 @@
         "dest": "17",
         "label": "Crying -- Pain",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -52494,7 +52494,7 @@
         "dest": "912",
         "label": "Hepatic failure -- Aplastic anaemia",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -52528,7 +52528,7 @@
         "dest": "411",
         "label": "Hepatic failure -- Pancreatitis",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -52732,7 +52732,7 @@
         "dest": "853",
         "label": "Pancreatitis -- Liver function test",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -52834,7 +52834,7 @@
         "dest": "388",
         "label": "Staring -- Petit mal epilepsy",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -52936,7 +52936,7 @@
         "dest": "892",
         "label": "Unresponsive to stimuli -- Computerised tomogram head",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -53004,7 +53004,7 @@
         "dest": "1266",
         "label": "Computerised tomogram normal -- Nuclear magnetic resonance imaging normal",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -53038,7 +53038,7 @@
         "dest": "285",
         "label": "Carbidopa -- Olanzapine",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -53072,7 +53072,7 @@
         "dest": "380",
         "label": "Carbidopa -- Levodopa",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -53106,7 +53106,7 @@
         "dest": "532",
         "label": "Carbidopa -- Pizotifen",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -53174,7 +53174,7 @@
         "dest": "627",
         "label": "Olanzapine -- Fluphenazine",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -53208,7 +53208,7 @@
         "dest": "360",
         "label": "Olanzapine -- Risperidone",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -53276,7 +53276,7 @@
         "dest": "1920",
         "label": "Levodopa -- Amantadine",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -53310,7 +53310,7 @@
         "dest": "283",
         "label": "Pizotifen -- Sumatriptan",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -53582,7 +53582,7 @@
         "dest": "1114",
         "label": "Pseudoephedrine -- Sinus congestion",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -53616,7 +53616,7 @@
         "dest": "968",
         "label": "Hypertension -- Metoprolol",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -53752,7 +53752,7 @@
         "dest": "1624",
         "label": "Nortriptyline -- Chronic paroxysmal hemicrania",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -53786,7 +53786,7 @@
         "dest": "905",
         "label": "Cannabidiol -- Blood cannabinoids",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -53854,7 +53854,7 @@
         "dest": "1873",
         "label": "Dry eye -- Propylene glycol",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -53888,7 +53888,7 @@
         "dest": "926",
         "label": "Dry eye -- Hypromellose",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -53990,7 +53990,7 @@
         "dest": "1840",
         "label": "Tetryzoline -- Glycerin",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -54058,7 +54058,7 @@
         "dest": "650",
         "label": "Chills -- Living alone",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -54092,7 +54092,7 @@
         "dest": "155",
         "label": "Disorientation -- Lethargy",
         "weight": "",
-        "level": 1
+        "level": 2
       }
     },
     {
@@ -54160,7 +54160,7 @@
         "dest": "94",
         "label": "Lethargy -- Somnolence",
         "weight": "",
-        "level": 1
+        "level": 2
       }
     },
     {
@@ -54194,7 +54194,7 @@
         "dest": "871",
         "label": "Lethargy -- Flooding",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -54262,7 +54262,7 @@
         "dest": "1988",
         "label": "Somnolence -- Doxycycline",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -54398,7 +54398,7 @@
         "dest": "136",
         "label": "Phentermine -- Topiramate",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -54432,7 +54432,7 @@
         "dest": "22",
         "label": "Hypoaesthesia -- Asthenia",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -54568,7 +54568,7 @@
         "dest": "427",
         "label": "Weight -- Weight increased",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -54704,7 +54704,7 @@
         "dest": "909",
         "label": "Weight -- Aversion",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -55112,7 +55112,7 @@
         "dest": "1076",
         "label": "Typhoid fever -- Syphilis",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -55180,7 +55180,7 @@
         "dest": "1551",
         "label": "Cortical dysplasia -- Dysplasia",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -55248,7 +55248,7 @@
         "dest": "117",
         "label": "Back pain -- Myalgia",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -55282,7 +55282,7 @@
         "dest": "562",
         "label": "Back pain -- Chiropractic",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -55316,7 +55316,7 @@
         "dest": "889",
         "label": "Back pain -- Cystitis",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -55486,7 +55486,7 @@
         "dest": "8",
         "label": "Myalgia -- Oropharyngeal pain",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -55588,7 +55588,7 @@
         "dest": "551",
         "label": "Chiropractic -- Joint dislocation",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -55656,7 +55656,7 @@
         "dest": "505",
         "label": "Arthralgia -- Rheumatic fever",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -55724,7 +55724,7 @@
         "dest": "873",
         "label": "Joint dislocation -- Facial bones fracture",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -55758,7 +55758,7 @@
         "dest": "508",
         "label": "Rheumatic fever -- Pineal gland cyst",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -55826,7 +55826,7 @@
         "dest": "41",
         "label": "Cognitive disorder -- Injury",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -55860,7 +55860,7 @@
         "dest": "302",
         "label": "Exercise adequate -- Weight",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -56030,7 +56030,7 @@
         "dest": "1992",
         "label": "Migraine -- Eletriptan",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -56064,7 +56064,7 @@
         "dest": "156",
         "label": "Migraine -- Headache",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -56234,7 +56234,7 @@
         "dest": "808",
         "label": "Migraine -- Tension headache",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -56268,7 +56268,7 @@
         "dest": "61",
         "label": "Headache -- Nausea",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -56540,7 +56540,7 @@
         "dest": "877",
         "label": "Vomiting -- Electroconvulsive therapy",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -56914,7 +56914,7 @@
         "dest": "787",
         "label": "Duloxetine -- Paroxetine",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -56982,7 +56982,7 @@
         "dest": "951",
         "label": "Bupropion -- Amiodarone",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -57016,7 +57016,7 @@
         "dest": "960",
         "label": "Paroxetine -- Albendazole",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -57050,7 +57050,7 @@
         "dest": "499",
         "label": "Amiodarone -- Warfarin",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -57186,7 +57186,7 @@
         "dest": "556",
         "label": "Felbamate -- Excoriation",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -57220,7 +57220,7 @@
         "dest": "79",
         "label": "Vigabatrin -- Infantile spasms",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -57254,7 +57254,7 @@
         "dest": "115",
         "label": "Vigabatrin -- Rufinamide",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -57390,7 +57390,7 @@
         "dest": "742",
         "label": "Long QT syndrome -- Electrocardiogram QT prolonged",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -57424,7 +57424,7 @@
         "dest": "186",
         "label": "Abortion spontaneous -- Stillbirth",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -57696,7 +57696,7 @@
         "dest": "1457",
         "label": "Pain in extremity -- Growing pains",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -57730,7 +57730,7 @@
         "dest": "1751",
         "label": "Glaucoma -- Angle closure glaucoma",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -57764,7 +57764,7 @@
         "dest": "1290",
         "label": "Glaucoma -- Myopia",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -57798,7 +57798,7 @@
         "dest": "625",
         "label": "Mesalazine -- Metronidazole",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -58070,7 +58070,7 @@
         "dest": "579",
         "label": "Restless legs syndrome -- Pramipexole",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -58104,7 +58104,7 @@
         "dest": "605",
         "label": "Pramipexole -- Dystonia",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -58138,7 +58138,7 @@
         "dest": "1454",
         "label": "Pramipexole -- Haematocrit",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -58206,7 +58206,7 @@
         "dest": "1410",
         "label": "Dystonia -- Hypertonia",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -58240,7 +58240,7 @@
         "dest": "1869",
         "label": "Hydrocortisone -- Phenol",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -58274,7 +58274,7 @@
         "dest": "859",
         "label": "Homicide -- Imprisonment",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -58614,7 +58614,7 @@
         "dest": "563",
         "label": "Palpitations -- Cardiomyopathy",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -58648,7 +58648,7 @@
         "dest": "31",
         "label": "Palpitations -- Dyspnoea",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -58716,7 +58716,7 @@
         "dest": "20",
         "label": "Dyspnoea -- Heart rate",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -58954,7 +58954,7 @@
         "dest": "221",
         "label": "Head injury -- Craniocerebral injury",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -59124,7 +59124,7 @@
         "dest": "925",
         "label": "Hypromellose -- Polyethylene glycol 400",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -59260,7 +59260,7 @@
         "dest": "606",
         "label": "General anaesthesia -- Dysphonia",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -59532,7 +59532,7 @@
         "dest": "1644",
         "label": "Carbon monoxide -- Carbon monoxide poisoning",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -59600,7 +59600,7 @@
         "dest": "733",
         "label": "Herpes virus infection -- Herpes simplex",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -59634,7 +59634,7 @@
         "dest": "141",
         "label": "Herpes virus infection -- Malaise",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -59668,7 +59668,7 @@
         "dest": "714",
         "label": "Herpes virus infection -- Pollution",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -59736,7 +59736,7 @@
         "dest": "866",
         "label": "Herpes virus infection -- HIV test positive",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -59770,7 +59770,7 @@
         "dest": "823",
         "label": "HIV test positive -- Premature ejaculation",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -59872,7 +59872,7 @@
         "dest": "732",
         "label": "Atrophy -- Hippocampal sclerosis",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -59940,7 +59940,7 @@
         "dest": "750",
         "label": "Prophylaxis -- Cluster headache",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -60314,7 +60314,7 @@
         "dest": "1960",
         "label": "Ranitidine -- Cimetidine",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -60382,7 +60382,7 @@
         "dest": "309",
         "label": "Lumbar puncture -- Computerised tomogram",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -60416,7 +60416,7 @@
         "dest": "179",
         "label": "Cetirizine -- Hypersensitivity",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -60450,7 +60450,7 @@
         "dest": "312",
         "label": "Drooling -- Benign rolandic epilepsy",
         "weight": "",
-        "level": 1
+        "level": 3
       }
     },
     {
@@ -60484,7 +60484,7 @@
         "dest": "325",
         "label": "Drooling -- Eye movement disorder",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -60518,7 +60518,7 @@
         "dest": "71",
         "label": "Drooling -- Circulatory collapse",
         "weight": "",
-        "level": 1
+        "level": 3
       }
     },
     {
@@ -60552,7 +60552,7 @@
         "dest": "812",
         "label": "Drooling -- Speech disorder",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -60586,7 +60586,7 @@
         "dest": "610",
         "label": "Circulatory collapse -- Depressed level of consciousness",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -60620,7 +60620,7 @@
         "dest": "605",
         "label": "Frontal lobe epilepsy -- Dystonia",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -60654,7 +60654,7 @@
         "dest": "594",
         "label": "Frontal lobe epilepsy -- Psychomotor seizures",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -60756,7 +60756,7 @@
         "dest": "1676",
         "label": "Eclampsia -- Blood pressure increased",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -60926,7 +60926,7 @@
         "dest": "673",
         "label": "Subdural haematoma -- Becker's naevus",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -60994,7 +60994,7 @@
         "dest": "757",
         "label": "Craniotomy -- Aneurysm",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -61096,7 +61096,7 @@
         "dest": "557",
         "label": "Phobia -- Enuresis",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -61164,7 +61164,7 @@
         "dest": "335",
         "label": "Phobia -- Dyspepsia",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -61232,7 +61232,7 @@
         "dest": "1408",
         "label": "Phobia -- Hypnotherapy",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -61368,7 +61368,7 @@
         "dest": "490",
         "label": "Dyspepsia -- Flatulence",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -61538,7 +61538,7 @@
         "dest": "870",
         "label": "Flatulence -- Glossodynia",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -61572,7 +61572,7 @@
         "dest": "1070",
         "label": "Flatulence -- Tenderness",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -61606,7 +61606,7 @@
         "dest": "1838",
         "label": "Learning disability -- Rabbit",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -61708,7 +61708,7 @@
         "dest": "827",
         "label": "Cerebrovascular accident -- Photophobia",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -61742,7 +61742,7 @@
         "dest": "824",
         "label": "Cerebrovascular accident -- Post-traumatic stress disorder",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -61844,7 +61844,7 @@
         "dest": "187",
         "label": "Paralysis -- Sleep paralysis",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -61878,7 +61878,7 @@
         "dest": "841",
         "label": "Paralysis -- Muscle spasticity",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -61946,7 +61946,7 @@
         "dest": "899",
         "label": "Sleep paralysis -- Cataplexy",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -62184,7 +62184,7 @@
         "dest": "1288",
         "label": "Homeopathy -- Naturopathy",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -62252,7 +62252,7 @@
         "dest": "916",
         "label": "Dysmetropsia -- Alice in wonderland syndrome",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -62524,7 +62524,7 @@
         "dest": "709",
         "label": "Bulimia nervosa -- Social phobia",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -62626,7 +62626,7 @@
         "dest": "652",
         "label": "Decreased appetite -- Incoherent",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -62728,7 +62728,7 @@
         "dest": "1764",
         "label": "Underweight -- Alexia",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -62762,7 +62762,7 @@
         "dest": "621",
         "label": "Acetazolamide -- Methsuximide",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -62830,7 +62830,7 @@
         "dest": "949",
         "label": "Methsuximide -- Fosphenytoin",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -62898,7 +62898,7 @@
         "dest": "418",
         "label": "Aphagia -- Bed rest",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -62932,7 +62932,7 @@
         "dest": "396",
         "label": "Aphagia -- Encephalitis viral",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -62966,7 +62966,7 @@
         "dest": "430",
         "label": "Aphagia -- Oral herpes",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -63136,7 +63136,7 @@
         "dest": "545",
         "label": "Progesterone decreased -- Premenstrual syndrome",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -63578,7 +63578,7 @@
         "dest": "592",
         "label": "Cough -- Retching",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -63816,7 +63816,7 @@
         "dest": "745",
         "label": "Choking -- Drowning",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -63884,7 +63884,7 @@
         "dest": "789",
         "label": "Dementia -- Hydroxyzine",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -63986,7 +63986,7 @@
         "dest": "713",
         "label": "Homeless -- Poverty",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -64054,7 +64054,7 @@
         "dest": "584",
         "label": "Poverty -- Unemployment",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -64088,7 +64088,7 @@
         "dest": "1343",
         "label": "Unemployment -- Loss of employment",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -64122,7 +64122,7 @@
         "dest": "109",
         "label": "Sleep study -- Sleep disorder",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -64156,7 +64156,7 @@
         "dest": "267",
         "label": "Sleep study -- Sleep apnoea syndrome",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -64190,7 +64190,7 @@
         "dest": "846",
         "label": "Sleep disorder -- Mental impairment",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -64224,7 +64224,7 @@
         "dest": "420",
         "label": "Sleep apnoea syndrome -- Apnoea",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -64292,7 +64292,7 @@
         "dest": "481",
         "label": "Crime -- Physical assault",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -64326,7 +64326,7 @@
         "dest": "675",
         "label": "Crime -- Asphyxia",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -64428,7 +64428,7 @@
         "dest": "407",
         "label": "Physical assault -- Sexual abuse",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -64462,7 +64462,7 @@
         "dest": "699",
         "label": "Physical assault -- Victim of sexual abuse",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -64496,7 +64496,7 @@
         "dest": "547",
         "label": "Asphyxia -- Petechiae",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -64564,7 +64564,7 @@
         "dest": "394",
         "label": "Sexual abuse -- Homicide",
         "weight": "",
-        "level": 2
+        "level": 1
       }
     },
     {
@@ -64598,7 +64598,7 @@
         "dest": "908",
         "label": "Sexual abuse -- Bankruptcy",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -64632,7 +64632,7 @@
         "dest": "815",
         "label": "Petechiae -- Retinopathy",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -64666,7 +64666,7 @@
         "dest": "1024",
         "label": "Petechiae -- Valsalva maneuver",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -64700,7 +64700,7 @@
         "dest": "584",
         "label": "Bankruptcy -- Unemployment",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -64734,7 +64734,7 @@
         "dest": "276",
         "label": "Abdominal discomfort -- Balance disorder",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -64768,7 +64768,7 @@
         "dest": "321",
         "label": "Balance disorder -- Mydriasis",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -64904,7 +64904,7 @@
         "dest": "395",
         "label": "Abdominal pain upper -- Eye pain",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -64938,7 +64938,7 @@
         "dest": "535",
         "label": "Abdominal pain upper -- Butterbur",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -64972,7 +64972,7 @@
         "dest": "1714",
         "label": "Butterbur -- Autonomic seizure",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -65006,7 +65006,7 @@
         "dest": "1696",
         "label": "Butterbur -- Birth trauma",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -65040,7 +65040,7 @@
         "dest": "1212",
         "label": "Butterbur -- Phytotherapy",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -65108,7 +65108,7 @@
         "dest": "586",
         "label": "Arrhythmia -- Transient ischaemic attack",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -65278,7 +65278,7 @@
         "dest": "519",
         "label": "Moaning -- Grunting",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -65414,7 +65414,7 @@
         "dest": "121",
         "label": "Temporal lobe epilepsy -- Deja vu",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -65788,7 +65788,7 @@
         "dest": "596",
         "label": "Paresis -- Postictal paralysis",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -65958,7 +65958,7 @@
         "dest": "705",
         "label": "Embolism -- Tanning",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -65992,7 +65992,7 @@
         "dest": "1400",
         "label": "Platelet count -- Idiopathic thrombocytopenic purpura",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -66332,7 +66332,7 @@
         "dest": "907",
         "label": "Migraine with aura -- Basilar migraine",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -66366,7 +66366,7 @@
         "dest": "782",
         "label": "Clavulanate -- Amoxicillin",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -66434,7 +66434,7 @@
         "dest": "153",
         "label": "Complex partial seizures -- Simple partial seizures",
         "weight": "",
-        "level": 3
+        "level": 1
       }
     },
     {
@@ -66468,7 +66468,7 @@
         "dest": "733",
         "label": "Aciclovir -- Herpes simplex",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -66604,7 +66604,7 @@
         "dest": "684",
         "label": "Aluminum hydroxide -- Magnesium carbonate",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -66638,7 +66638,7 @@
         "dest": "679",
         "label": "Aluminum hydroxide -- Dimethicone",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -66672,7 +66672,7 @@
         "dest": "641",
         "label": "White blood cell count -- Premature menopause",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -66774,7 +66774,7 @@
         "dest": "1125",
         "label": "Rizatriptan -- Sensory loss",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -66842,7 +66842,7 @@
         "dest": "431",
         "label": "Multiple sclerosis -- Muscular dystrophy",
         "weight": "",
-        "level": 3
+        "level": 2
       }
     },
     {
@@ -67182,7 +67182,7 @@
         "dest": "1528",
         "label": "Oedema -- Eosinophilia",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -67250,7 +67250,7 @@
         "dest": "886",
         "label": "Gait disturbance -- Derealisation",
         "weight": "",
-        "level": 2
+        "level": 3
       }
     },
     {
@@ -67284,7 +67284,7 @@
         "dest": "513",
         "label": "Mumps -- Measles",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -67386,7 +67386,7 @@
         "dest": "598",
         "label": "Herpes zoster -- Muscle relaxant therapy",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -67488,7 +67488,7 @@
         "dest": "1220",
         "label": "Immunisation -- Pertussis",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -67624,7 +67624,7 @@
         "dest": "407",
         "label": "Coma -- Sexual abuse",
         "weight": "",
-        "level": 3
+        "level": 4
       }
     },
     {
@@ -67658,7 +67658,7 @@
         "dest": "1273",
         "label": "Neutrophil count -- Neutropenia",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -67930,7 +67930,7 @@
         "dest": "918",
         "label": "Apathy -- Affect lability",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -68168,7 +68168,7 @@
         "dest": "523",
         "label": "Grimacing -- Clonus",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -68304,7 +68304,7 @@
         "dest": "906",
         "label": "Biopsy -- Biopsy muscle",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     },
     {
@@ -68338,7 +68338,7 @@
         "dest": "1634",
         "label": "Biopsy -- Central nervous system lesion",
         "weight": "",
-        "level": 4
+        "level": 3
       }
     }
   ]
