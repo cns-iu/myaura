@@ -16,7 +16,7 @@ py_include_path = os.path.abspath(os.path.join(os.path.dirname(__file__), os.par
 sys.path.insert(0, py_include_path)
 #
 import db_init as db
-
+from collections import Counter
 import pandas as pd
 import json
 
@@ -41,9 +41,12 @@ if __name__ == '__main__':
 
     mention_table = 'mention_pubmed_epilepsy_%s.mention' % (dicttimestamp)
     comention_table = 'mention_pubmed_epilepsy_%s.comention' % (dicttimestamp)
+    mention_count_table = 'mention_pubmed_epilepsy_%s.mention_count' % (dicttimestamp)
     psql_mention = db.connectToPostgreSQL('cns-postgres-myaura')
 
     inserts = {}
+
+    mention_count = Counter()
 
     for i in range(10000):
         offset = i * 100
@@ -64,6 +67,9 @@ if __name__ == '__main__':
                 date_publication = row[1] if (row[1] is not None) else -10000
 
                 matches = match['matches']
+
+                for m in matches:
+                    mention_count[m['id_parent']] += 1
 
                 # Combination of all matches
                 for source, target in combinations(matches, 2):
@@ -110,6 +116,14 @@ if __name__ == '__main__':
     inserts_list = inserts.values()
     inserts_size = len(inserts_list)
     # print( '> inserting {:,d} records'.format(inserts_size))
+
+    for drug_id in mention_count:
+        sql = "INSERT INTO %s VALUES (%d, %d);" % \
+              (mention_count_table, drug_id, mention_count[drug_id])
+        try:
+            q = psql_mention.execute(sql)
+        except ValueError as error:
+            print("Error! Args: '{:s}'".format(error.args))
 
     count = 0
     for comention in inserts_list:

@@ -57,7 +57,8 @@ if __name__ == '__main__':
     #
     # Init
     #
-    dicttimestamp = '20180706'
+    # dicttimestamp = '20180706'
+    dicttimestamp = '20210321'
 
     print('--- Building (same post) CoMentions ---')
 
@@ -72,6 +73,8 @@ if __name__ == '__main__':
     n = len(df)
     # The co-mention counter 
     counter = Counter()
+    # The mention counter
+    mention_count = Counter()
     # A hashable object to use in the frozenset counter
     #match = namedtuple('Match', ['id_match', 'id_parent', 'token', 'parent', 'type'])
     matchparent = namedtuple('Match', ['id_parent', 'parent', 'type'])
@@ -82,6 +85,8 @@ if __name__ == '__main__':
         #
         matches = row['matches']
         list_user_comentions = []
+        for m in matches:
+            mention_count[m['id_parent']] += 1
         for source, target in combinations(row['matches'], 2):
 
             # Skip self-loops
@@ -109,9 +114,16 @@ if __name__ == '__main__':
     columns = pd.MultiIndex.from_tuples([(level, field) for level in ['source', 'target'] for field in ['id_parent', 'parent', 'type']] + [('comention', 'count')])
     dfR = pd.DataFrame(records, columns=columns)
 
+    mention_count_df = pd.DataFrame(mention_count.items(), columns=('id_parent', 'mention_count'))
+
     # Export
     wCSVfile = '../tmp-data/02-efwebsite-forums-comentions-{dicttimestamp:s}-samepost.csv.gz'.format(dicttimestamp=dicttimestamp)
     utils.ensurePathExists(wCSVfile)
     dfR.to_csv(wCSVfile)
+
+
+    mention_count_CSVfile = '../tmp-data/02-efwebsite-forums-mentions-counts-{dicttimestamp:s}-samepost.csv.gz'.format(dicttimestamp=dicttimestamp)
+    utils.ensurePathExists(mention_count_CSVfile)
+    mention_count_df.to_csv(mention_count_CSVfile)
 
     print('Done.')
