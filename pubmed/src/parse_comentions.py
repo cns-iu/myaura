@@ -68,28 +68,35 @@ if __name__ == '__main__':
 
                 matches = match['matches']
 
+
+                # We want unique matches of id_parent
+                # Here we also removed id and token, since they have no use in the following part and can cause confusion
+                # when only one token is reserved while multiple tokens were matched
+                # Two processes are needed, so a for loop. Though one of them can be written in list comprehension
+                set_matches_id_parent = set()
+                list_unique_mateches = []
                 for m in matches:
-                    mention_count[m['id_parent']] += 1
+                    if m['id_parent'] not in set_matches_id_parent:
+                        set_matches_id_parent.add(m['id_parent'])
+                        m.pop('id')
+                        m.pop('token')
+                        list_unique_mateches.append(m)
+                mention_count.update(set_matches_id_parent)
+
 
                 # Combination of all matches
-                for source, target in combinations(matches, 2):
+                for source, target in combinations(list_unique_mateches, 2):
 
                     ## Always the smaller number, first
                     # if source['id'] > target['id']:
                     #	source, target = target, source
 
-                    id_source = source['id']
                     id_parent_source = source['id_parent']
 
-                    id_target = target['id']
                     id_parent_target = target['id_parent']
 
-                    # Skip self-loops
-                    if id_parent_source == id_parent_target:
-                        continue
-
                     # Key to only add after all user posts have been processed
-                    key = frozenset((id_source, id_target))
+                    key = frozenset((id_parent_source, id_parent_target))
                     if key not in inserts:
                         comention = {
                             'source': source,
@@ -117,9 +124,9 @@ if __name__ == '__main__':
     inserts_size = len(inserts_list)
     # print( '> inserting {:,d} records'.format(inserts_size))
 
-    for drug_id in mention_count:
+    for term_id_parent in mention_count:
         sql = "INSERT INTO %s VALUES (%d, %d);" % \
-              (mention_count_table, drug_id, mention_count[drug_id])
+              (mention_count_table, term_id_parent, mention_count[term_id_parent])
         try:
             q = psql_mention.execute(sql)
         except ValueError as error:
@@ -129,7 +136,7 @@ if __name__ == '__main__':
     for comention in inserts_list:
 
         sql = "INSERT INTO %s VALUES (%d, %d, '%s');" % \
-              (comention_table, comention['source']['id'], comention['target']['id'], json.dumps(comention).replace("'", "''"))
+              (comention_table, comention['source']['id_parent'], comention['target']['id_parent'], json.dumps(comention).replace("'", "''"))
         try:
             q = psql_mention.execute(sql)
         except ValueError as error:

@@ -28,7 +28,7 @@ CREATE TABLE $SCHEMA.$TABLE (id_parent INT, mention_count INT, PRIMARY KEY (id_p
 
 EOF
 
-python src/parse_pubmed_comentions.py
+python src/parse_comentions.py
 
 #
 # SQL command to grant permissions to users on the new schema and tables

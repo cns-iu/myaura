@@ -17,6 +17,17 @@ CREATE TABLE $SCHEMA.$TABLE (source INT, target INT, comention JSONB, PRIMARY KE
 
 EOF
 
+TABLE=mention_count
+
+echo $SCHEMA.$TABLE
+
+psql << EOF
+
+DROP TABLE IF EXISTS $SCHEMA.$TABLE;
+CREATE TABLE $SCHEMA.$TABLE (id_parent INT, mention_count INT, PRIMARY KEY (id_parent));
+
+EOF
+
 python src/parse_comentions.py
 
 #

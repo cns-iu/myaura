@@ -66,7 +66,15 @@ if __name__ == '__main__':
     dict_di_meth = {frozenset((k)): v for k, v in list(dict_di_meth.items())}
     """
     comention_table = 'mention_clinical_trials_%s.comention' % (dicttimestamp)
+    mention_count_table = 'mention_clinical_trials_%s.mention_count' % (dicttimestamp)
     psql_mention = db.connectToPostgreSQL('cns-postgres-myaura')
+
+    mention_count = {}
+    print('load mention counts')
+    sql = "SELECT id_parent, mention_count FROM %s" % (mention_count_table)
+    q = psql_mention.execute(sql)
+    for row in q.fetchall():
+        mention_count[row[0]] = row[1]
 
     #
     # build network
@@ -112,8 +120,8 @@ if __name__ == '__main__':
 
     def normalize(i, j, d, min_support=10):
         r_ij = d['count']
-        r_ii = counts[i]
-        r_jj = counts[j]
+        r_ii = mention_count[i]
+        r_jj = mention_count[j]
         if (r_ii + r_jj - r_ij) >= min_support:
             return r_ij / (r_ii + r_jj - r_ij)
         else:

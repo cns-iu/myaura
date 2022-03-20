@@ -17,7 +17,7 @@ CREATE TABLE $SCHEMA.$TABLE (pmid INT, year_publication INT, match JSONB);
 
 EOF
 
-python src/parse_pubmed_mentions.py
+python src/parse_mentions.py
 
 psql << EOF
 
