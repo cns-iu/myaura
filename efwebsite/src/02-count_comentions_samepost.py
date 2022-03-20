@@ -85,21 +85,26 @@ if __name__ == '__main__':
         #
         matches = row['matches']
         list_user_comentions = []
-        for m in matches:
-            mention_count[m['id_parent']] += 1
-        for source, target in combinations(row['matches'], 2):
+        n_matches = set([m['id_parent'] for m in row['matches']])
+        mention_count.update(n_matches)
+
+        nt_matches = [matchparent(m['id_parent'], m['parent'], m['type']) for m in row['matches']]
+        nt_matches = list(set(nt_matches))
+        for source, target in combinations(nt_matches, 2):
 
             # Skip self-loops
-            if source['id_parent'] == target['id_parent']:
-                continue
+            # if source['id_parent'] == target['id_parent']:
+            #     continue
+            # if source.id_parent == target.id_parent:
+            #     continue
 
             #msource = match(source['id'], source['id_parent'], source['token'], source['parent'], source['type'])
             #mtarget = match(target['id'], target['id_parent'], target['token'], target['parent'], target['type'])
-            msource = matchparent(source['id_parent'], source['parent'], source['type'])
-            mtarget = matchparent(target['id_parent'], target['parent'], target['type'])
+            # msource = matchparent(source['id_parent'], source['parent'], source['type'])
+            # mtarget = matchparent(target['id_parent'], target['parent'], target['type'])
 
             # didn't use id_parent yet
-            comention = frozenset((msource, mtarget))
+            comention = frozenset((source, target))
             list_user_comentions.append(comention)
         #
         counter.update(list_user_comentions)
