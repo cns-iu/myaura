@@ -85,12 +85,12 @@ if __name__ == '__main__':
         #
         matches = row['matches']
         list_user_comentions = []
-        n_matches = set([m['id_parent'] for m in row['matches']])
-        mention_count.update(n_matches)
+        unique_id_parent = set([m['id_parent'] for m in row['matches']])
+        mention_count.update(unique_id_parent)
 
-        nt_matches = [matchparent(m['id_parent'], m['parent'], m['type']) for m in row['matches']]
-        nt_matches = list(set(nt_matches))
-        for source, target in combinations(nt_matches, 2):
+        unique_parent_rich = [matchparent(m['id_parent'], m['parent'], m['type']) for m in row['matches']]
+        unique_parent_rich = list(set(unique_parent_rich))
+        for source, target in combinations(unique_parent_rich, 2):
 
             # Skip self-loops
             # if source['id_parent'] == target['id_parent']:
