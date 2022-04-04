@@ -47,7 +47,7 @@ if __name__ == '__main__':
     tdp.build_vocabulary(list_tuples)
 
     # Connect to DB
-    cnxmongo, _ = db.connectToMongoDB(server='mongo_tweetline', db='tweetline')
+    cnxmongo, _ = db.connectToMongoDB(server='angst-mongo-tweetline', db='tweetline')
 
     #
     # Query Mongo
@@ -86,19 +86,20 @@ if __name__ == '__main__':
 
         # Print a screen flush so we can check up on progress
         if (i % 100000 == 0):
-            print '%0.2fM,' % (i / 10000000.),
+            print('%0.2fM,' % (i / 10000000.), end=' ')
             sys.stdout.flush()
         #
         i += 1
 
     print('--- Finished iteration ---')
 
-    time_end = datetime.datetime.now()
-    time_diff = relativedelta(time_end, time_start)
-    print "Elapsed Time: %d year %d month %d days %d hours %d minutes %d seconds %d microseconds" % (time_diff.years, time_diff.months, time_diff.days, time_diff.hours, time_diff.minutes, time_diff.seconds, time_diff.microseconds)
-
-    print '--- Create DataFrame with Results ---'
+    print('--- Create DataFrame with Results ---')
     dfR = pd.DataFrame(results, columns=['user_id', '_id', 'datetime', 'text'])
 
-    print '- Export DataFrame'
+    print('- Export DataFrame')
     dfR.to_csv('../tmp-data/db-matches-epilepsy.csv.gz')
+
+    time_end = datetime.now()
+    time_diff = relativedelta(time_end, time_start)
+    print("Elapsed Time: %d year %d month %d days %d hours %d minutes %d seconds %d microseconds" % (time_diff.years, time_diff.months, time_diff.days, time_diff.hours, time_diff.minutes, time_diff.seconds, time_diff.microseconds))
+

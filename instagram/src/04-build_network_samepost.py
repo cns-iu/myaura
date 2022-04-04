@@ -29,6 +29,7 @@ if __name__ == '__main__':
 
     # Init
     dicttimestamp = '20180706'
+    # dicttimestamp = '20210321'
     #window_size = '7'  # in days
 
     """
@@ -67,6 +68,12 @@ if __name__ == '__main__':
     rCSVfile = '../tmp-data/02-instagram-epilepsy-comentions-{dicttimestamp:s}-samepost.csv.gz'.format(dicttimestamp=dicttimestamp)
     df = pd.read_csv(rCSVfile, index_col=0, header=[0, 1])
 
+    mention_count_CSVfile = '../tmp-data/02-instagram-epilepsy-mentions-counts-{dicttimestamp:s}-samepost.csv.gz'.format(dicttimestamp=dicttimestamp)
+    mention_count_df = pd.read_csv(mention_count_CSVfile, index_col=0)
+    mention_count_dict = {}
+    for _, row in mention_count_df.iterrows():
+        mention_count_dict[int(row['id_parent'])] = int(row['mention_count'])
+
     # Filter
     df = df.loc[df[('comention', 'count')] >= 3, :]
 
@@ -99,16 +106,13 @@ if __name__ == '__main__':
 
     print('--- Compute Normalized p_ij ---')
 
-    print('> Edge Counts')
-    counts = {k: sum([d['count'] for i, j, d in G.edges(nbunch=k, data=True)]) for k in G.nodes()}
-
     min_support = 10
     print('> Normalized Values (min_support: {min_support:d}'.format(min_support=min_support))
 
     def normalize(i, j, d, min_support=10):
         r_ij = d['count']
-        r_ii = counts[i]
-        r_jj = counts[j]
+        r_ii = mention_count_dict[i]
+        r_jj = mention_count_dict[j]
         if (r_ii + r_jj - r_ij) >= min_support:
             return r_ij / (r_ii + r_jj - r_ij)
         else:

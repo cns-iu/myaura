@@ -58,6 +58,7 @@ if __name__ == '__main__':
     # Init
     #
     dicttimestamp = '20180706'
+    # dicttimestamp = '20210321'
 
     print('--- Building (same post) CoMentions ---')
 
@@ -72,6 +73,8 @@ if __name__ == '__main__':
     n = len(df)
     # The co-mention counter 
     counter = Counter()
+    # The mention counter
+    mention_count = Counter()
     # A hashable object to use in the frozenset counter
     #match = namedtuple('Match', ['id_match', 'id_parent', 'token', 'parent', 'type'])
     matchparent = namedtuple('Match', ['id_parent', 'parent', 'type'])
@@ -82,19 +85,26 @@ if __name__ == '__main__':
         #
         matches = row['matches']
         list_user_comentions = []
-        for source, target in combinations(row['matches'], 2):
+        unique_id_parent = set([m['id_parent'] for m in row['matches']])
+        mention_count.update(unique_id_parent)
+
+        unique_parent_rich = [matchparent(m['id_parent'], m['parent'], m['type']) for m in row['matches']]
+        unique_parent_rich = list(set(unique_parent_rich))
+        for source, target in combinations(unique_parent_rich, 2):
 
             # Skip self-loops
-            if source['id_parent'] == target['id_parent']:
-                continue
+            # if source['id_parent'] == target['id_parent']:
+            #     continue
+            # if source.id_parent == target.id_parent:
+            #     continue
 
             #msource = match(source['id'], source['id_parent'], source['token'], source['parent'], source['type'])
             #mtarget = match(target['id'], target['id_parent'], target['token'], target['parent'], target['type'])
-            msource = matchparent(source['id_parent'], source['parent'], source['type'])
-            mtarget = matchparent(target['id_parent'], target['parent'], target['type'])
+            # msource = matchparent(source['id_parent'], source['parent'], source['type'])
+            # mtarget = matchparent(target['id_parent'], target['parent'], target['type'])
 
             # didn't use id_parent yet
-            comention = frozenset((msource, mtarget))
+            comention = frozenset((source, target))
             list_user_comentions.append(comention)
         #
         counter.update(list_user_comentions)
@@ -109,9 +119,16 @@ if __name__ == '__main__':
     columns = pd.MultiIndex.from_tuples([(level, field) for level in ['source', 'target'] for field in ['id_parent', 'parent', 'type']] + [('comention', 'count')])
     dfR = pd.DataFrame(records, columns=columns)
 
+    mention_count_df = pd.DataFrame(mention_count.items(), columns=('id_parent', 'mention_count'))
+
     # Export
     wCSVfile = '../tmp-data/02-twitter-epilepsy-comentions-{dicttimestamp:s}-samepost.csv.gz'.format(dicttimestamp=dicttimestamp)
     utils.ensurePathExists(wCSVfile)
     dfR.to_csv(wCSVfile)
+
+
+    mention_count_CSVfile = '../tmp-data/02-twitter-epilepsy-mentions-counts-{dicttimestamp:s}-samepost.csv.gz'.format(dicttimestamp=dicttimestamp)
+    utils.ensurePathExists(mention_count_CSVfile)
+    mention_count_df.to_csv(mention_count_CSVfile)
 
     print('Done.')

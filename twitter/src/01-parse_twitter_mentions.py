@@ -59,7 +59,7 @@ if __name__ == '__main__':
     # Get Users from MongoDB
     #
     db_raw = 'ddi_cohort_epilepsy'
-    mongo_raw, _ = db.connectToMongoDB(server='mongo-tweetline', db=db_raw)
+    mongo_raw, _ = db.connectToMongoDB(server='angst-mongo-tweetline', db=db_raw)
 
     #
     # Load Selected Timelines
@@ -91,7 +91,7 @@ if __name__ == '__main__':
     # Get Users Timelines
     #
     print('--- Requesting Mongo Data: `tweetline` ---')
-    mongo_raw, _ = db.connectToMongoDB(server='mongo-tweetline', db='tweetline')
+    mongo_raw, _ = db.connectToMongoDB(server='angst-mongo-tweetline', db='tweetline')
     #
     n_users = dfU.shape[0]
     #
