@@ -1,7 +1,7 @@
 [
   {
     "id": "net_efwebsite_forums_20210321-is_original",
-    "name": "Efwebsite Forums 20210321 (Original)",
+    "name": "Efwebsite Forums 20210321 (Original), Batchtree",
     "dir": "assets/datasets/net_efwebsite_forums_20210321-is_original"
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "id": "net_efwebsite_forums_20210321-is_metric",
-    "name": "Efwebsite Forums 20210321 (Metric)",
+    "name": "Efwebsite Forums 20210321 (Metric), Batchtree",
     "dir": "assets/datasets/net_efwebsite_forums_20210321-is_metric"
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "id": "net_efwebsite_forums_20210321-is_ultrametric",
-    "name": "Efwebsite Forums 20210321 (Ultrametric)",
+    "name": "Efwebsite Forums 20210321 (Ultrametric), Batchtree",
     "dir": "assets/datasets/net_efwebsite_forums_20210321-is_ultrametric"
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "id": "net_mega_20210321-is_original",
-    "name": "Mega 20210321 (Original)",
+    "name": "Mega 20210321 (Original), Batchtree",
     "dir": "assets/datasets/net_mega_20210321-is_original"
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "id": "net_mega_20210321-is_metric",
-    "name": "Mega 20210321 (Metric)",
+    "name": "Mega 20210321 (Metric), Batchtree",
     "dir": "assets/datasets/net_mega_20210321-is_metric"
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "id": "net_mega_20210321-is_ultrametric",
-    "name": "Mega 20210321 (Ultrametric)",
+    "name": "Mega 20210321 (Ultrametric), Batchtree",
     "dir": "assets/datasets/net_mega_20210321-is_ultrametric"
   },
   {
