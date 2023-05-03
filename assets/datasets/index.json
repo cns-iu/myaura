@@ -5,6 +5,11 @@
     "dir": "assets/datasets/net_efwebsite_forums_20210321-is_original"
   },
   {
+    "id": "net_efwebsite_forums_20210321-is_original-CG",
+    "name": "Efwebsite Forums 20210321 (Original), CG",
+    "dir": "assets/datasets/net_efwebsite_forums_20210321-is_original-CG"
+  },
+  {
     "id": "net_efwebsite_forums_20210321-is_original-DELG",
     "name": "Efwebsite Forums 20210321 (Original), DELG",
     "dir": "assets/datasets/net_efwebsite_forums_20210321-is_original-DELG"
@@ -13,6 +18,11 @@
     "id": "net_efwebsite_forums_20210321-is_metric",
     "name": "Efwebsite Forums 20210321 (Metric), Batchtree",
     "dir": "assets/datasets/net_efwebsite_forums_20210321-is_metric"
+  },
+  {
+    "id": "net_efwebsite_forums_20210321-is_metric-CG",
+    "name": "Efwebsite Forums 20210321 (Metric), CG",
+    "dir": "assets/datasets/net_efwebsite_forums_20210321-is_metric-CG"
   },
   {
     "id": "net_efwebsite_forums_20210321-is_metric-DELG",
@@ -25,6 +35,11 @@
     "dir": "assets/datasets/net_efwebsite_forums_20210321-is_ultrametric"
   },
   {
+    "id": "net_efwebsite_forums_20210321-is_ultrametric-CG",
+    "name": "Efwebsite Forums 20210321 (Ultrametric), CG",
+    "dir": "assets/datasets/net_efwebsite_forums_20210321-is_ultrametric-CG"
+  },
+  {
     "id": "net_efwebsite_forums_20210321-is_ultrametric-DELG",
     "name": "Efwebsite Forums 20210321 (Ultrametric), DELG",
     "dir": "assets/datasets/net_efwebsite_forums_20210321-is_ultrametric-DELG"
@@ -33,6 +48,11 @@
     "id": "net_mega_20210321-is_original",
     "name": "Mega 20210321 (Original), Batchtree",
     "dir": "assets/datasets/net_mega_20210321-is_original"
+  },
+  {
+    "id": "net_mega_20210321-is_original-CG",
+    "name": "Mega 20210321 (Original), CG",
+    "dir": "assets/datasets/net_mega_20210321-is_original-CG"
   },
   {
     "id": "net_mega_20210321-is_original-DELG",
@@ -45,6 +65,11 @@
     "dir": "assets/datasets/net_mega_20210321-is_metric"
   },
   {
+    "id": "net_mega_20210321-is_metric-CG",
+    "name": "Mega 20210321 (Metric), CG",
+    "dir": "assets/datasets/net_mega_20210321-is_metric-CG"
+  },
+  {
     "id": "net_mega_20210321-is_metric-DELG",
     "name": "Mega 20210321 (Metric), DELG",
     "dir": "assets/datasets/net_mega_20210321-is_metric-DELG"
@@ -53,6 +78,11 @@
     "id": "net_mega_20210321-is_ultrametric",
     "name": "Mega 20210321 (Ultrametric), Batchtree",
     "dir": "assets/datasets/net_mega_20210321-is_ultrametric"
+  },
+  {
+    "id": "net_mega_20210321-is_ultrametric-CG",
+    "name": "Mega 20210321 (Ultrametric), CG",
+    "dir": "assets/datasets/net_mega_20210321-is_ultrametric-CG"
   },
   {
     "id": "net_mega_20210321-is_ultrametric-DELG",
