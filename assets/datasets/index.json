@@ -88,5 +88,65 @@
     "id": "net_mega_20210321-is_ultrametric-DELG",
     "name": "Mega 20210321 (Ultrametric), DELG",
     "dir": "assets/datasets/net_mega_20210321-is_ultrametric-DELG"
+  },
+  {
+    "id": "net_clinical_trials_20210321-is_metric",
+    "name": "Clinical Trials 20210321 (Metric), BatchTree",
+    "dir": "assets/datasets/net_clinical_trials_20210321-is_metric"
+  },
+  {
+    "id": "net_clinical_trials_20210321-is_original",
+    "name": "Clinical Trials 20210321 (Original), BatchTree",
+    "dir": "assets/datasets/net_clinical_trials_20210321-is_original"
+  },
+  {
+    "id": "net_clinical_trials_20210321-is_ultrametric",
+    "name": "Clinical Trials 20210321 (Ultrametric), BatchTree",
+    "dir": "assets/datasets/net_clinical_trials_20210321-is_ultrametric"
+  },
+  {
+    "id": "net_instagram_20210321-is_metric",
+    "name": "Instagram 20210321 (Metric, BatchTree",
+    "dir": "assets/datasets/net_instagram_20210321-is_metric"
+  },
+  {
+    "id": "net_instagram_20210321-is_original",
+    "name": "Instagram 20210321 (Original), BatchTree",
+    "dir": "assets/datasets/net_instagram_20210321-is_original"
+  },
+  {
+    "id": "net_instagram_20210321-is_ultrametric",
+    "name": "Instagram 20210321 (Ultrametric), BatchTree",
+    "dir": "assets/datasets/net_instagram_20210321-is_ultrametric"
+  },
+  {
+    "id": "net_pubmed_epilepsy_20210321-is_metric",
+    "name": "Pubmed Epilepsy 20210321 (Metric), BatchTree",
+    "dir": "assets/datasets/net_pubmed_epilepsy_20210321-is_metric"
+  },
+  {
+    "id": "net_pubmed_epilepsy_20210321-is_original",
+    "name": "Pubmed Epilepsy 20210321 (Original), BatchTree",
+    "dir": "assets/datasets/net_pubmed_epilepsy_20210321-is_original"
+  },
+  {
+    "id": "net_pubmed_epilepsy_20210321-is_ultrametric",
+    "name": "Pubmed Epilepsy 20210321 (Ultrametric), BatchTree",
+    "dir": "assets/datasets/net_pubmed_epilepsy_20210321-is_ultrametric"
+  },
+  {
+    "id": "net_twitter_20180706-is_metric",
+    "name": "Twitter 20180706 (Metric), BatchTree",
+    "dir": "assets/datasets/net_twitter_20180706-is_metric"
+  },
+  {
+    "id": "net_twitter_20180706-is_original",
+    "name": "Twitter 20180706 (Original), BatchTree",
+    "dir": "assets/datasets/net_twitter_20180706-is_original"
+  },
+  {
+    "id": "net_twitter_20180706-is_ultrametric",
+    "name": "Twitter 20180706 (Ultrametric), BatchTree",
+    "dir": "assets/datasets/net_twitter_20180706-is_ultrametric"
   }
 ]
