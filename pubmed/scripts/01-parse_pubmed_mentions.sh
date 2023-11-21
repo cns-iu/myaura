@@ -29,7 +29,7 @@ EOF
 #
 # SQL command to grant permissions to users on the new schema and tables
 #
-USERS="rionbr xw47 larzhang gallantm bherr"
+USERS="rionbr xw47 larzhang gallantm bherr ziqiguo"
 for USER in $USERS
 do
 	echo "-- Granting permissons to schema and tables to user '$USER'"
