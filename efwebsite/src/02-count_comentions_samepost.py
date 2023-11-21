@@ -57,8 +57,7 @@ if __name__ == '__main__':
     #
     # Init
     #
-    # dicttimestamp = '20180706'
-    dicttimestamp = '20210321'
+    dicttimestamp = '20180706'
 
     print('--- Building (same post) CoMentions ---')
 

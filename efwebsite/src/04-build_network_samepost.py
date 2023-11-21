@@ -28,8 +28,8 @@ from dijkstra import all_pairs_dijkstra_path_length
 if __name__ == '__main__':
 
     # Init
-    # dicttimestamp = '20180706'
-    dicttimestamp = '20210321'
+    dicttimestamp = '20180706'
+
     #window_size = '7'  # in days
 
     """
