@@ -30,7 +30,7 @@ if __name__ == '__main__':
     dicttimestamp = '20180706'
 
     # Load Dictionary
-    dfD = load_dictionary(dicttimestamp=dicttimestamp, server='etrash-mysql-ddi-dictionaries')
+    dfD = load_dictionary(dicttimestamp=dicttimestamp, server='cns-postgres-myaura')
     # Build Parser Vocabulary
     tdp = build_term_parser(dfD)
 
