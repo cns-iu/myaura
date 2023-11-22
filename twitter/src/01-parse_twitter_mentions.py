@@ -21,7 +21,7 @@ import re
 import db_init as db
 import utils
 from load_dictionary import load_dictionary, build_term_parser
-from termdictparser import Sentences
+from termdictparser import TermDictionaryParser, Sentences
 
 
 if __name__ == '__main__':
@@ -31,7 +31,7 @@ if __name__ == '__main__':
     #
     dicttimestamp = '20180706'
 
-    data = set([
+    data = [
         'clobazam', 'onfi',
         'levetiracetam', 'keppra', 'Levetiracetamum',
         'lamotrigine', 'lamictal', 'lamotrigina', 'lamotrigine', 'lamotriginum',
@@ -40,7 +40,7 @@ if __name__ == '__main__':
         'diazepam', 'valium', 'diastat',
         'oxcarbazepine',
         'seizuremeds',
-    ])
+    ]
 
     # Load Dictionary
     dfD = load_dictionary(dicttimestamp=dicttimestamp, server='cns-postgres-myaura')
@@ -67,25 +67,28 @@ if __name__ == '__main__':
     dfP = pd.read_csv('../tmp-data/db-matches-epilepsy.csv', header=0, index_col=0)
 
     # Remove everything after a ReTweet
-    dfP['text'] = dfP['text'].str.replace(r'rt @[a-z0-9_]+.+', '', flags=re.IGNORECASE)
-
-    # Remove everything after a ReTweet
     re_retweet = re.compile(r"rt @[a-z0-9_]+.+", re.IGNORECASE|re.UNICODE)
     dfP['text'] = dfP['text'].str.replace(re_retweet, '')
 
-    re_tokenizer = re.compile(r"[\w']+", re.UNICODE)
+    # Build Term Parser
+    tdp_drug = TermDictionaryParser()
+    list_tuples_drugs = [(i, t) for i , t in enumerate(data)]
+    tdp_drug.build_vocabulary(list_tuples_drugs)
 
-    def contains_match(x):
-        tokens = set(re_tokenizer.findall(x))
-        return any(tokens.intersection(data))
+    def contains_match(text):
+        s = Sentences(text).preprocess(lower=True).tokenize().match_tokens(parser=tdp_drug)
+        return s.has_match()
 
     # Post contains drug match
     dfP['contains'] = dfP['text'].apply(contains_match)
 
     # Keep only posts with mentions
+    print("Original rows", len(dfP))
     dfP = dfP.loc[(dfP['contains'] == True), :]
+    print("Rows after removing retweets", len(dfP))
     #
     dfU = dfP.groupby('user_id').agg({'_id': 'count'}).rename(columns={'_id': 'n-matched-posts'}).reset_index()
+    print("Total Users", len(dfU))
 
     #
     # Get Users Timelines
