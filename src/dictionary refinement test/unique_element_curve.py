@@ -1,14 +1,29 @@
 #%%
 
+import matplotlib
+matplotlib.use('Agg')
 import networkx as nx
 import os,pickle, json
 import sys
 from scipy import stats
-sys.path.append('../../include')
-from load_dictionary import load_dictionary
-import db_init as db
+# NOTE: load_dictionary / db_init / kendall imports removed — unused in this
+# script's body and db_init pulls in sqlalchemy/pymongo + a live DB config.
 import pandas as pd
-from kendall import kendall_top_k
+
+
+def eig_centrality_numpy(G, weight='count', max_iter=50, tol=0):
+    """Eigenvector centrality via the SAME computation networkx uses, minus the
+    disconnected-graph guard added in networkx>=3.2 (gh-6888). The 2024 figure
+    was produced with an older networkx that ran this on the (disconnected)
+    co-mention graphs without raising. Verbatim copy of the post-guard body of
+    networkx.algorithms.centrality.eigenvector.eigenvector_centrality_numpy."""
+    import numpy as np
+    import scipy as sp
+    M = nx.to_scipy_sparse_array(G, nodelist=list(G), weight=weight, dtype=float)
+    _, eigenvector = sp.sparse.linalg.eigs(M.T, k=1, which="LR", maxiter=max_iter, tol=tol)
+    largest = eigenvector.flatten().real
+    norm = np.sign(largest.sum()) * sp.linalg.norm(largest)
+    return dict(zip(G, (largest / norm).tolist()))
 from collections import defaultdict
 import numpy as np
 import matplotlib.pyplot as plt
@@ -31,7 +46,7 @@ list_tau = []
 old_network_file = '../../instagram/tmp-data/04-instagram-epilepsy-network-20180706-samepost.graphml'
 old_net = nx.read_graphml(old_network_file)
 
-eigen_old = nx.eigenvector_centrality_numpy(old_net, weight='count')
+eigen_old = eig_centrality_numpy(old_net, weight='count')
 # eigen_old = nx.pagerank_numpy(old_net, alpha=0.99, weight='count')
 # eigen_old = nx.eigenvector_centrality_numpy(old_net, weight='proximity')
 # eigen_old = nx.pagerank_numpy(old_net, alpha=0.99, weight='proximity')
@@ -95,7 +110,7 @@ df_common_element_ratio_stat.to_csv('common_element_ratio_stat.csv')
 reference_network_file = '../../instagram/tmp-data/04-instagram-epilepsy-network-20231116-samepost.graphml'
 reference_net = nx.read_graphml(reference_network_file)
 
-eigen_reference = nx.eigenvector_centrality_numpy(reference_net, weight='count')
+eigen_reference = eig_centrality_numpy(reference_net, weight='count')
 # common_nodes = set(eigen_old.keys()) & set(eigen_reference.keys())
 common_nodes = set(eigen_old.keys()) | set(eigen_reference.keys())
 df_eigen_reference = pd.DataFrame(eigen_reference.items(), columns=['id', 'centrality'])
@@ -120,7 +135,7 @@ selected_8, = ax.plot(df_common_element_ratio_reference['k'], df_common_element_
 handles = [random_mean, random_std, selected_8]
 labels = ['Mean CER After Removing Random 8 Terms', '±1 STD of CER After Removing Random 8 Terms', 'CER After Removing Selected 8 Terms']
 ax.legend(handles=handles, labels=labels, loc='lower right')
-ax.set_xlabel('k')
+ax.set_xlabel('t')
 ax.set_ylabel('Common Element Ratio')
 # set y limit
 ax.set_ylim(0, 1)
@@ -150,14 +165,15 @@ plt.fill_between(df_common_element_ratio_stat.index,
 sns.lineplot(x='k', y='common_element_ratio', data=df_common_element_ratio_reference, label='CER After Removing Selected 8 Terms', color=palette[1])
 
 # Enhancing the plot
-plt.xlabel(r'$\mathit{k}$')
+# ONLY INTENTIONAL CHANGE vs the published figure: x-axis label k -> t
+# (paper text now uses top-t). Everything else keeps the original look.
+plt.xlabel(r'$\mathit{t}$')
 plt.ylabel('Common Element Ratio (CER)')
 # plt.title('Impact of Term Removal on CER')
 plt.ylim(0, 1)
 plt.legend(loc='lower right')
 
 plt.tight_layout()
-# Show the plot
 plt.savefig('results/plot/common_element_ratio.pdf')
 plt.show()
 
@@ -198,7 +214,7 @@ sns.lineplot(x='k', y='common_element_ratio', data=df_common_element_ratio_refer
 # sns.lineplot(x=df_common_element_ratio_reference['k'], y=1-df_common_element_ratio_reference['common_element_ratio'], label='1 - CER After Removing Selected 8 Terms', color=palette[1])
 
 # Enhancing the plot
-plt.xlabel(r'$\mathit{k}$')
+plt.xlabel(r'$\mathit{t}$')
 plt.ylabel('Common Element Ratio (CER)')
 # plt.title('Impact of Term Removal on CER')
 # plt.ylim(0, 1)
