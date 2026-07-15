@@ -27,7 +27,7 @@ if __name__ == '__main__':
     #
     # Init
     #
-    dicttimestamp = '20180706'
+    dicttimestamp = '20231116'  # 8-term canonical for viz DB (was 20180706)
 
     # Load Dictionary
     dfD = load_dictionary(dicttimestamp=dicttimestamp, server='cns-postgres-myaura')

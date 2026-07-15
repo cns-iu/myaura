@@ -130,7 +130,7 @@ if __name__ == '__main__':
     #
     # Init
     #
-    dicttimestamp = '20180706'
+    dicttimestamp = '20231116'  # 8-term canonical for viz DB (was 20180706)
 
     # window_size = 7 # in days
     # cohort = 'opioids' # (depression, epilepsy or opioids)
