@@ -53,3 +53,5 @@ testem.log
 Thumbs.db
 
 /Results.txt
+# DB connection configs (credentials) — never commit
+db_config.json
