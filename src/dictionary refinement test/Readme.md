@@ -31,4 +31,11 @@ There are two versions: thF use all tokens above a threshold and thR do not use 
 
 Then call gen_comention_net.py to generate all networks using those sampled ids. This script can accept any json of ids and calculate the corresponding networks and save them in a directory. 
 
-Then call simple_eigen_1vn.py to get the stat metrics. 
+## tau and tau's missing penalty
+
+simple_eigen_1vn.py is an old script that read in a list of id and calculate the statistics for tau (mean, std) for top 10 20 50 100 500. 
+
+Originally we thought this is a one pass calculation. Then we need to do more calculation for the contributing factors for tau. A new pipeline is written for this purpose. 
+
+- eigen_nodes_for_networks.py: this file read in a list of network ids then do the eigenvector centrality (or other centrality at your choice) and save the result into a csv, at the side of network files. So we do not need to calculate the centrality every time, just read them in. 
+- tau_factor.py: obsolete. After we found out that we cannot justify 0.5 and random permutation/totally different list, we do not want to continue with the missing penalty contribution calculation.

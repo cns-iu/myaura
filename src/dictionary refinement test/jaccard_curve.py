@@ -3,6 +3,7 @@
 import networkx as nx
 import os,pickle, json
 import sys
+from collections import defaultdict
 from scipy import stats
 sys.path.append('../../include')
 from load_dictionary import load_dictionary
@@ -45,12 +46,8 @@ with open(name_root + '_id.json', 'r') as f:
 
 id_dict = batch_ids
 
-list_tau = []
-
-old_network_file = '../../instagram/tmp-data/04-instagram-epilepsy-network-20180706-samepost.graphml'
-old_net = nx.read_graphml(old_network_file)
-
-for key in id_dict:
+def jaccard_curve(network_id):
+    key = network_id
     network_name = key
     removed_id = id_dict[key]
 
@@ -191,31 +188,103 @@ for key in id_dict:
     rga2 = np.array(score_list_full_new)
     net_tau = []
     for i in [10, 20, 50, 100, 200, 500]:
-        tau, norm_tau = kendall_top_k(rga1, rga2, k=i, p=0.5, reverse=True)
-        # big change, previously we use norm_tau, now we use tau
-        # net_tau.append(norm_tau)
-        net_tau.append(tau)
-        print('|', '|'.join([str(x) for x in [i, tau, norm_tau]]), '|')
+        rho, n_tau = kendall_top_k(rga1, rga2, k=i, p=0.5, reverse=True)
+        net_tau.append(n_tau)
+        print('|', '|'.join([str(x) for x in [i, rho, n_tau]]), '|')
     print()
     list_tau.append(net_tau)
 
+list_tau = []
 
-# [10, 20, 50, 100, 200, 500]
-# create a data.frame with columns named as top_10, top_20, top_50, top_100, top_200, top_500
-# every cell is a float number, which is the tau value
-# get the value from list_tau
-df_tau = pd.DataFrame(list_tau, columns=['top_10', 'top_20', 'top_50', 'top_100', 'top_200', 'top_500'])
-df_tau.to_csv(name_root + '_tau.csv', index=False)
+old_network_file = '../../instagram/tmp-data/04-instagram-epilepsy-network-20180706-samepost.graphml'
+old_net = nx.read_graphml(old_network_file)
 
-# for each column of df_tau, calculate the mean and std
-print('printing mean and std')
-for col in df_tau.columns:
-    print(col, df_tau[col].mean(), df_tau[col].std())
+jaccard_index_dict = defaultdict(list)
 
-# print this to org-mode table, transpose the table
-# keep only two decimal places
-tbl = tabulate(df_tau.describe().T, headers='keys', tablefmt='orgtbl', floatfmt='.3f')
-print(tbl)
+for key in id_dict:
+    print(key)
+    network_name = key
+    removed_id = id_dict[key]
 
-# save df_tau to csv file
-df_tau.to_csv(name_root + '_tau.csv', index=False)
+    new_network_file = os.path.join('network', network_name, '04-instagram-epilepsy-network-20180706-samepost.graphml')
+
+    new_net = nx.read_graphml(new_network_file)
+
+    def get_parent(idx):
+        return dfD.loc[idx]['id_parent']
+
+    removed_parent = [get_parent(i) for i in removed_id]
+
+    #%%
+
+    eigen_old = nx.eigenvector_centrality_numpy(old_net, weight='count')
+    eigen_new = nx.eigenvector_centrality_numpy(new_net, weight='count')
+    # eigen_old = nx.pagerank_numpy(old_net, alpha=0.99, weight='count')
+    # eigen_new = nx.pagerank_numpy(new_net, alpha=0.99, weight='count')
+    # eigen_old = nx.eigenvector_centrality_numpy(old_net, weight='proximity')
+    # eigen_new = nx.eigenvector_centrality_numpy(new_net, weight='proximity')
+    # eigen_old = nx.pagerank_numpy(old_net, alpha=0.99, weight='proximity')
+    # eigen_new = nx.pagerank_numpy(new_net, alpha=0.99, weight='proximity')
+
+
+    #%%
+
+    def get_token(idx):
+        return dfD.loc[int(idx)]['token']
+    def print_list(l):
+        for line in l:
+            print('|'+'|'.join([str(i) for i in line])+'|')
+    def describe_list(l, d):
+        for item in l:
+            token = get_token(item)
+            print('|', item,'|',  token,'|',  d[item], '|' )
+
+    #%%
+
+    top_nodes_old = sorted(eigen_old, key=eigen_old.get, reverse=True)
+
+    #%%
+
+    top_nodes_new = sorted(eigen_new, key=eigen_new.get, reverse=True)
+
+    #%%
+
+    # no need for this, since now two networks have same nodes, but we need to be tolerant to old code
+    common_id = set(top_nodes_new) & set(top_nodes_old)
+    # remove parent terms of removed tokens. Need this? Not for generalized kendall tau
+    legit_id = common_id - set([str(i) for i in removed_parent])
+
+    l_top_nodes_old = [node for node in top_nodes_old if node in common_id]
+    l_top_nodes_new = [node for node in top_nodes_new if node in common_id]
+
+    limit = 500
+
+    # calculate Jaccard Index for top k nodes
+    for i in range(10, limit):
+        jaccard_index = (len(set(l_top_nodes_old[:i]) & set(l_top_nodes_new[:i])) /
+                         len(set(l_top_nodes_old[:i]) | set(l_top_nodes_new[:i])))
+        jaccard_index_dict[i].append(jaccard_index)
+
+# get the stats for the Jaccard Index for each k and save it into a dataframe
+# the stat includes average, median, min, max, and std
+df_jaccard_index_stats = pd.DataFrame()
+for k, v in jaccard_index_dict.items():
+    df_jaccard_index_stats.loc[k, 'average'] = np.mean(v)
+    df_jaccard_index_stats.loc[k, 'median'] = np.median(v)
+    df_jaccard_index_stats.loc[k, 'min'] = np.min(v)
+    df_jaccard_index_stats.loc[k, 'max'] = np.max(v)
+    df_jaccard_index_stats.loc[k, 'std'] = np.std(v)
+
+# save the stats into a csv file
+df_jaccard_index_stats.to_csv('jaccard_index_stats.csv')
+
+#%%
+# plot the Jaccard Index curve, x axis is k, y axis is Jaccard Index average
+import matplotlib.pyplot as plt
+
+plt.plot(df_jaccard_index_stats.index, df_jaccard_index_stats['average'])
+
+plt.xlabel('k')
+plt.ylabel('Jaccard Index')
+plt.title('Jaccard Index Curve')
+plt.show()
