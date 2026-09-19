@@ -128,12 +128,12 @@ df_common_element_ratio_reference = pd.DataFrame(reference_common_element_ratio_
 
 fig, ax = plt.subplots()
 
-random_mean, = ax.plot(df_common_element_ratio_stat.index, df_common_element_ratio_stat['mean']) #, label='Mean CER After Removing Random 8 Terms')
+random_mean, = ax.plot(df_common_element_ratio_stat.index, df_common_element_ratio_stat['mean']) #, label='Mean CER After Removing 8 Random Terms')
 random_std = ax.fill_between(df_common_element_ratio_stat.index, df_common_element_ratio_stat['mean'] - df_common_element_ratio_stat['std'],
-                 df_common_element_ratio_stat['mean'] + df_common_element_ratio_stat['std'], alpha=0.2) #, label='±1 STD of CER After Removing Random 8 Terms')
-selected_8, = ax.plot(df_common_element_ratio_reference['k'], df_common_element_ratio_reference['common_element_ratio']) #, label='CER After Removing Selected 8 Terms')
+                 df_common_element_ratio_stat['mean'] + df_common_element_ratio_stat['std'], alpha=0.2) #, label='±1 STD of CER After Removing 8 Random Terms')
+selected_8, = ax.plot(df_common_element_ratio_reference['k'], df_common_element_ratio_reference['common_element_ratio']) #, label='CER After Removing 8 Selected Terms')
 handles = [random_mean, random_std, selected_8]
-labels = ['Mean CER After Removing Random 8 Terms', '±1 STD of CER After Removing Random 8 Terms', 'CER After Removing Selected 8 Terms']
+labels = ['Mean CER After Removing 8 Random Terms', '±1 STD of CER After Removing 8 Random Terms', 'CER After Removing 8 Selected Terms']
 ax.legend(handles=handles, labels=labels, loc='lower right')
 ax.set_xlabel('t')
 ax.set_ylabel('Common Element Ratio')
@@ -153,25 +153,34 @@ plt.rcParams['mathtext.fontset'] = 'stix'
 palette = sns.color_palette("mako_r", 2)
 
 # Main line plot for the mean CER after removing random terms
-sns.lineplot(x=df_common_element_ratio_stat.index, y='mean', data=df_common_element_ratio_stat, label='Mean CER After Removing Random 8 Terms', color=palette[0])
+sns.lineplot(x=df_common_element_ratio_stat.index, y='mean', data=df_common_element_ratio_stat, label='Mean CER After Removing 8 Random Terms', color=palette[0])
 
 # Add the fill between for standard deviation
 plt.fill_between(df_common_element_ratio_stat.index,
                  df_common_element_ratio_stat['mean'] - df_common_element_ratio_stat['std'],
                  df_common_element_ratio_stat['mean'] + df_common_element_ratio_stat['std'],
-                 color=palette[0], alpha=0.2, label='±1 STD of CER After Removing Random 8 Terms')
+                 color=palette[0], alpha=0.2, label='±1 STD of CER After Removing 8 Random Terms')
 
 # Additional line plot for the selected terms impact
-sns.lineplot(x='k', y='common_element_ratio', data=df_common_element_ratio_reference, label='CER After Removing Selected 8 Terms', color=palette[1])
+sns.lineplot(x='k', y='common_element_ratio', data=df_common_element_ratio_reference, label='CER After Removing 8 Selected Terms', color=palette[1])
 
 # Enhancing the plot
-# ONLY INTENTIONAL CHANGE vs the published figure: x-axis label k -> t
-# (paper text now uses top-t). Everything else keeps the original look.
+# ONLY INTENTIONAL CHANGES vs the published figure, both textual:
+#   1. x-axis label k -> t (paper text now uses top-t);
+#   2. legend wording "Random 8 Terms"/"Selected 8 Terms" -> "8 Random Terms"/
+#      "8 Selected Terms", to match the figure caption (editor comment #21).
+# Everything else keeps the original look, data and axis range.
 plt.xlabel(r'$\mathit{t}$')
 plt.ylabel('Common Element Ratio (CER)')
 # plt.title('Impact of Term Removal on CER')
 plt.ylim(0, 1)
-plt.legend(loc='lower right')
+# Legend row order is PINNED to the published figure's: the two curves first,
+# then the shaded band. Modern matplotlib's default is creation order (mean,
+# +-1 STD, selected) instead; leaving it at the default silently reorders the
+# legend relative to the figure that is live in the paper.
+_handles, _labels = plt.gca().get_legend_handles_labels()
+_order = [0, 2, 1]  # mean, selected, +-1 STD
+plt.legend([_handles[i] for i in _order], [_labels[i] for i in _order], loc='lower right')
 
 plt.tight_layout()
 plt.savefig('results/plot/common_element_ratio.pdf')
@@ -194,24 +203,24 @@ plt.rcParams['mathtext.fontset'] = 'stix'
 palette = sns.color_palette("mako_r", 2)
 
 # Main line plot for the mean CER after removing random terms
-sns.lineplot(x=df_common_element_ratio_stat.index, y='mean', data=df_common_element_ratio_stat, label='Mean CER After Removing Random 8 Terms', color=palette[0])
+sns.lineplot(x=df_common_element_ratio_stat.index, y='mean', data=df_common_element_ratio_stat, label='Mean CER After Removing 8 Random Terms', color=palette[0])
 
 # this doesn't work well
 # plot 1-mean for better visualization
-# sns.lineplot(x=df_common_element_ratio_stat.index, y=1-df_common_element_ratio_stat['mean'], label='1 - Mean CER After Removing Random 8 Terms', color=palette[0])
+# sns.lineplot(x=df_common_element_ratio_stat.index, y=1-df_common_element_ratio_stat['mean'], label='1 - Mean CER After Removing 8 Random Terms', color=palette[0])
 
 # Add the fill between for standard deviation
 plt.fill_between(df_common_element_ratio_stat.index,
                  df_common_element_ratio_stat['mean'] - df_common_element_ratio_stat['std'],
                  df_common_element_ratio_stat['mean'] + df_common_element_ratio_stat['std'],
-                 color=palette[0], alpha=0.2, label='±1 STD of CER After Removing Random 8 Terms')
+                 color=palette[0], alpha=0.2, label='±1 STD of CER After Removing 8 Random Terms')
 
 # Additional line plot for the selected terms impact
-sns.lineplot(x='k', y='common_element_ratio', data=df_common_element_ratio_reference, label='CER After Removing Selected 8 Terms', color=palette[1])
+sns.lineplot(x='k', y='common_element_ratio', data=df_common_element_ratio_reference, label='CER After Removing 8 Selected Terms', color=palette[1])
 
 # this doesn't work well
 # 1- for better visualization
-# sns.lineplot(x=df_common_element_ratio_reference['k'], y=1-df_common_element_ratio_reference['common_element_ratio'], label='1 - CER After Removing Selected 8 Terms', color=palette[1])
+# sns.lineplot(x=df_common_element_ratio_reference['k'], y=1-df_common_element_ratio_reference['common_element_ratio'], label='1 - CER After Removing 8 Selected Terms', color=palette[1])
 
 # Enhancing the plot
 plt.xlabel(r'$\mathit{t}$')
